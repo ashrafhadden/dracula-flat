@@ -1,22 +1,20 @@
 {
 	"name": "theme-dracula",
 	"version": "2.17.0",
-	"displayName": "Dracula Official",
-	"homepage": "https://draculatheme.com/",
-	"description": "Official Dracula Theme. A dark theme for many editors, shells, and more.",
-	"publisher": "dracula-theme",
+	"displayName": "Dracula Dark Reader",
+	"homepage": "https://github.com/ashrafhadden/dracula-dark-reader",
+	"description": "Dracula theme + Dark Reader colors",
+	"publisher": "ashrafhadden",
 	"license": "MIT",
 	"scripts": {
 		"dev": "node ./scripts/dev.js",
 		"build": "node ./scripts/build.js",
 		"lint": "node ./scripts/lint.js",
-		"package": "vsce package -o ./bin/dracula.vsix",
+		"package": "vsce package -o ./bin/dracula-dark-reader.vsix",
 		"vscode:prepublish": "npm run build"
 	},
-	"maintainers": [
-		"Derek P Sifford <dereksifford@gmail.com>"
-	],
 	"contributors": [
+		"Derek P Sifford",
 		"Krzysztof Wisznarewski",
 		"Daniel Ramos",
 		"Eric Jackson",
@@ -41,7 +39,8 @@
 		"dracula",
 		"dark",
 		"theme",
-		"color-theme"
+		"color-theme",
+		"dark-reader"
 	],
 	"icon": "icon.png",
 	"galleryBanner": {
@@ -51,14 +50,19 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Dracula",
+				"label": "Dracula Dark Reader",
 				"uiTheme": "vs-dark",
-				"path": "./theme/dracula.json"
+				"path": "./theme/dracula-dark-reader.json"
 			},
 			{
-				"label": "Dracula Soft",
+				"label": "Dracula Dark Reader (Brightness +50)",
 				"uiTheme": "vs-dark",
-				"path": "./theme/dracula-soft.json"
+				"path": "./theme/dracula-dark-reader-b50.json"
+			},
+			{
+				"label": "Dracula Dark Reader (Brightness +50, Contrast +10)",
+				"uiTheme": "vs-dark",
+				"path": "./theme/dracula-dark-reader-b50-c10.json"
 			}
 		]
 	},
@@ -69,7 +73,7 @@
 	},
 	"__metadata": {
 		"id": "4e44877c-1c8d-4f9c-ba86-1372d0fbeeb1",
-		"publisherDisplayName": "Dracula Theme",
+		"publisherDisplayName": "Ashraf Hadden",
 		"publisherId": "fbb3d024-f8f2-460c-bdb5-99552f6d8c4b"
 	}
 }
