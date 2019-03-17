@@ -20,13 +20,13 @@ async function loadTheme(yamlFilePath) {
     const standardThemeYAML = await readFileRetrying(yamlFilePath);
     const standardTheme = await loadYAML(standardThemeYAML);
 
-    const softThemeYAML = getSoftThemeYAML(standardThemeYAML, standardTheme);
-    const softTheme = await loadYAML(softThemeYAML);
+    const b50ThemeYAML = getb50ThemeYAML(standardThemeYAML, standardTheme);
+    const b50Theme = await loadYAML(b50ThemeYAML);
 
-    return { standardTheme, softTheme };
+    return { standardTheme, b50Theme };
 }
 
-function getSoftThemeYAML(fileContent, standardTheme) {
+function getb50ThemeYAML(fileContent, standardTheme) {
     const brightColors = [
         ...standardTheme.dracula.ansi,
         ...standardTheme.dracula.brightOther,

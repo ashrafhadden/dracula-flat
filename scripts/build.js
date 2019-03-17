@@ -16,13 +16,13 @@ async function build() {
         await fsp.mkdir(THEME_DIR);
     }
 
-    const { standardTheme, softTheme } = await loadThemes(THEME_YAML_FILE);
+    const { standardTheme, b50Theme } = await loadThemes(THEME_YAML_FILE);
     const standardThemePath = path.join(THEME_DIR, 'dracula.json');
-    const softThemePath = path.join(THEME_DIR, 'dracula-soft.json');
+    const b50ThemePath = path.join(THEME_DIR, 'dracula-soft.json');
 
     await Promise.all([
         fsp.writeFile(standardThemePath, toJSON(standardTheme)),
-        fsp.writeFile(softThemePath, toJSON(softTheme)),
+        fsp.writeFile(b50ThemePath, toJSON(b50Theme)),
     ]);
 }
 
