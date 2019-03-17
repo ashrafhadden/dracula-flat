@@ -17,9 +17,9 @@ async function build() {
     }
 
     const { standardTheme, b50Theme, b50c10Theme } = await loadThemes(THEME_YAML_FILE);
-    const standardThemePath = path.join(THEME_DIR, 'dracula.json');
-    const b50ThemePath = path.join(THEME_DIR, 'dracula-soft.json');
-    const b50c10ThemePath = path.join(THEME_DIR, 'dracula-soft.json');
+    const standardThemePath = path.join(THEME_DIR, 'dracula-dark-reader.json');
+    const b50ThemePath = path.join(THEME_DIR, 'dracula-dark-reader-b50.json');
+    const b50c10ThemePath = path.join(THEME_DIR, 'dracula-dark-reader-b50-c10.json');
 
     await Promise.all([
         fsp.writeFile(standardThemePath, toJSON(standardTheme)),
