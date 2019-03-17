@@ -23,10 +23,29 @@ async function loadTheme(yamlFilePath) {
     const b50ThemeYAML = getb50ThemeYAML(standardThemeYAML, standardTheme);
     const b50Theme = await loadYAML(b50ThemeYAML);
 
-    return { standardTheme, b50Theme };
+    const b50c10ThemeYAML = getb50c10ThemeYAML(standardThemeYAML, standardTheme);
+    const b50c10Theme = await loadYAML(b50c10ThemeYAML);
+
+    return { standardTheme, b50Theme, b50c10Theme };
 }
 
 function getb50ThemeYAML(fileContent, standardTheme) {
+    const brightColors = [
+        ...standardTheme.dracula.ansi,
+        ...standardTheme.dracula.brightOther,
+    ];
+
+    return fileContent.replace(/#[0-9A-F]{6}/g, color => {
+        if (brightColors.includes(color)) {
+            return tinycolor(color)
+                .desaturate(20)
+                .toHexString();
+        }
+        return color;
+    });
+}
+
+function getb50c10ThemeYAML(fileContent, standardTheme) {
     const brightColors = [
         ...standardTheme.dracula.ansi,
         ...standardTheme.dracula.brightOther,
