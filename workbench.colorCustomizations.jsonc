@@ -1,0 +1,39 @@
+// This file referenced in `## Light Install` section of README
+// I also use this as my personal reference on how to tweak the original
+// Dracula Official theme to become Dark Reader Theme
+
+/*
+STEPS TO CREATE
+To create Dracula Dark Theme I first tweak my `workbench.colorCustomizations`
+I then lookup the associated YAML variable in `Dracula.json` which is the master
+reference file for the Dracula Official vscode theme https://github.com/dracula/visual-studio-code
+I change all associated YAML variables to the default Dark Reader Theme color #17181C
+The comments are references to the YAML variables used in the `dracula.yml`
+*/
+
+{
+    "workbench.colorCustomizations": {
+        "[Dracula]": {
+            /// Dark Reader (Brightness +50)
+            // YAML Variables: BG, BGDark, BGDarker
+            "breadcrumb.background": "#23242a", // BGDark
+            "editor.background": "#23242a", // BG
+            "editorGroupHeader.tabsBackground": "#23242a", // BGDarker
+            "panel.background": "#23242a", // BG
+            "sideBar.background": "#23242a", // BGDark
+            "sideBar.border": "#23242a", // Originally Empty => BG
+            "sideBarSectionHeader.background": "#23242a", // BG
+            "sideBarSectionHeader.border": "#23242a", // BGDarker
+            "statusBar.background": "#23242a", // BGDarker
+            "statusBar.border": "#23242a", // Originally Empty => BG
+            "statusBar.noFolderBackground": "#23242a", // BGDarker
+            "tab.activeBackground": "#23242a", // BG
+            "tab.border": "#23242a", // BGDarker
+            "tab.inactiveBackground": "#23242a", // BGDark
+            "terminal.background": "#23242a", // BG
+            "terminal.border": "#23242a", // Originally doesn't exist => BG
+            "titleBar.activeBackground": "#23242a", // BGDark
+            "titleBar.inactiveBackground": "#23242a" //BGDarker
+        }
+    }
+}

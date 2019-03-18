@@ -16,10 +16,11 @@ async function build() {
         await fsp.mkdir(THEME_DIR);
     }
 
+    const extensionName = 'dark-reader-theme'
     const { standardTheme, b50Theme, b50c10Theme } = await loadThemes(THEME_YAML_FILE);
-    const standardThemePath = path.join(THEME_DIR, 'dracula-dark-reader.json');
-    const b50ThemePath = path.join(THEME_DIR, 'dracula-dark-reader-b50.json');
-    const b50c10ThemePath = path.join(THEME_DIR, 'dracula-dark-reader-b50-c10.json');
+    const standardThemePath = path.join(THEME_DIR, `${extensionName}.json`);
+    const b50ThemePath = path.join(THEME_DIR, `${extensionName}-b50.json`);
+    const b50c10ThemePath = path.join(THEME_DIR, `${extensionName}-b50-c10.json`);
 
     await Promise.all([
         fsp.writeFile(standardThemePath, toJSON(standardTheme)),

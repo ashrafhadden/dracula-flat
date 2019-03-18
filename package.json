@@ -1,19 +1,23 @@
 {
-	"name": "theme-dracula",
-	"version": "2.17.0",
-	"displayName": "Dracula Dark Reader",
-	"homepage": "https://github.com/ashrafhadden/dracula-dark-reader",
-	"description": "Dracula theme + Dark Reader colors",
+	"name": "dark-reader-theme",
+	"version": "1.0.0",
+	"displayName": "Dark Reader Theme",
+	"homepage": "https://github.com/ashrafhadden/dark-reader-theme",
+	"description": "Dracula theme + Dark Reader background color",
 	"publisher": "ashrafhadden",
 	"license": "MIT",
 	"scripts": {
-		"dev": "node ./scripts/dev.js",
 		"build": "node ./scripts/build.js",
+		"test": "node ./scripts/dev.js",
 		"lint": "node ./scripts/lint.js",
-		"package": "vsce package -o ./bin/dracula-dark-reader.vsix",
-		"vscode:prepublish": "npm run build"
+		"start": "vsce package && code --install-extension ${npm_package_name}-${npm_package_version}.vsix",
+		"vscode:prepublish": "npm update && npm run build"
 	},
+	"maintainers": [
+		"Ashraf Hadden <ashrafhadden@gmail.com>"
+	],
 	"contributors": [
+		"Zeno Rocha",
 		"Derek P Sifford",
 		"Krzysztof Wisznarewski",
 		"Daniel Ramos",
@@ -24,10 +28,10 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dracula/visual-studio-code.git"
+		"url": "https://github.com/ashrafhadden/dark-reader-theme"
 	},
 	"bugs": {
-		"url": "https://github.com/dracula/visual-studio-code/issues"
+		"url": "https://github.com/ashrafhadden/dark-reader-theme/issues"
 	},
 	"engines": {
 		"vscode": "^1.13.0"
@@ -50,30 +54,24 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Dracula Dark Reader",
+				"label": "Dark Reader",
 				"uiTheme": "vs-dark",
-				"path": "./theme/dracula-dark-reader.json"
+				"path": "./theme/dark-reader-theme.json"
 			},
 			{
-				"label": "Dracula Dark Reader (Brightness +50)",
+				"label": "Dark Reader (Brightness +50)",
 				"uiTheme": "vs-dark",
-				"path": "./theme/dracula-dark-reader-b50.json"
+				"path": "./theme/dark-reader-theme-b50.json"
 			},
 			{
-				"label": "Dracula Dark Reader (Brightness +50, Contrast +10)",
+				"label": "Dark Reader (Brightness +50 Contrast +10)",
 				"uiTheme": "vs-dark",
-				"path": "./theme/dracula-dark-reader-b50-c10.json"
+				"path": "./theme/dark-reader-theme-b50-c10.json"
 			}
 		]
 	},
 	"devDependencies": {
-		"js-yaml": "^3.12.0",
-		"prettier": "^1.14.3",
-		"tinycolor2": "^1.4.1"
-	},
-	"__metadata": {
-		"id": "4e44877c-1c8d-4f9c-ba86-1372d0fbeeb1",
-		"publisherDisplayName": "Ashraf Hadden",
-		"publisherId": "fbb3d024-f8f2-460c-bdb5-99552f6d8c4b"
+		"js-yaml": "^3.13.1",
+		"prettier": "^1.16.4"
 	}
 }

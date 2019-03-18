@@ -1,6 +1,6 @@
 'use strict';
 
-const tinycolor = require('tinycolor2');
+const fs = require('fs');
 const fsp = require('./fsp');
 const { loadYAML } = require('./yaml');
 
@@ -30,35 +30,19 @@ async function loadTheme(yamlFilePath) {
 }
 
 function getb50ThemeYAML(fileContent, standardTheme) {
-    const brightColors = [
-        ...standardTheme.dracula.ansi,
-        ...standardTheme.dracula.brightOther,
-    ];
+    const BG = standardTheme.dracula.base[0];
+    const b50 = standardTheme.dracula.other[8];
+    const regex = new RegExp(BG, 'g');
 
-    return fileContent.replace(/#[0-9A-F]{6}/g, color => {
-        if (brightColors.includes(color)) {
-            return tinycolor(color)
-                .desaturate(20)
-                .toHexString();
-        }
-        return color;
-    });
+    return fileContent.replace(regex, b50);
 }
 
 function getb50c10ThemeYAML(fileContent, standardTheme) {
-    const brightColors = [
-        ...standardTheme.dracula.ansi,
-        ...standardTheme.dracula.brightOther,
-    ];
+    const BG = standardTheme.dracula.base[0];
+    const b50c10 = standardTheme.dracula.other[9];
+    const regex = new RegExp(BG, 'g');
 
-    return fileContent.replace(/#[0-9A-F]{6}/g, color => {
-        if (brightColors.includes(color)) {
-            return tinycolor(color)
-                .desaturate(20)
-                .toHexString();
-        }
-        return color;
-    });
+    return fileContent.replace(regex, b50c10);
 }
 
 module.exports = loadTheme;

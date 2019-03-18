@@ -1,11 +1,11 @@
-name: Dracula
-author: Zeno Rocha
+name: Dark Reader Theme
+author: Ashraf Hadden
 maintainers:
-  - Derek P Sifford <dereksifford@gmail.com>
+  - Ashraf Hadden <ashrafhadden@gmail.com>
 semanticClass: theme.dracula
 dracula:
   base:
-    - &BG        '#282A36'
+    - &BG        '#17181C' # Dark Reader
     - &FG        '#F8F8F2'
     - &SELECTION '#44475A'
     - &COMMENT   '#6272A4'
@@ -45,14 +45,17 @@ dracula:
     # UI Variants
     - &BGLighter     '#424450'
     - &BGLight       '#343746' # HSV (230   , 25.71, 27.45)
-    - &BGDark        '#21222C' # HSV (234.55, 25   , 17.25)
-    - &BGDarker      '#191A21' # HSV (234.55, 25   , 13   )
+    - &BGDark        '#17181C' # Dark Reader
+    - &BGDarker      '#17181C' # Dark Reader
+    - &b50        '#23242A' # Dark Reader (Brightness +50)
+    - &b50c10        '#191B21' # Dark Reader (Brightness +50 Contrast +10)
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:
 
   # Integrated Terminal Colors
   terminal.background: *BG
+  terminal.border: *BG
   terminal.foreground: *FG
   terminal.ansiBrightBlack: *COLOR8
   terminal.ansiBrightRed: *COLOR9
@@ -147,7 +150,7 @@ colors:
   # Side Bar
   sideBar.background: *BGDark                                                   # Side Bar background color
   sideBar.foreground:                                                           # Side Bar foreground color. The Side Bar is the container for views like Explorer and Search
-  sideBar.border:                                                               # Side Bar border color on the side separating the editor
+  sideBar.border: *BG                                                  # Side Bar border color on the side separating the editor
   sideBarTitle.foreground: *FG                                                  # Side Bar title foreground color
   sideBarSectionHeader.background: *BG                                          # Side Bar section header background color
   sideBarSectionHeader.foreground:                                              # Side Bar section header foreground color
@@ -311,7 +314,7 @@ colors:
   statusBarItem.hoverBackground:                                                # Status Bar item background color when hovering
   statusBarItem.prominentBackground: *RED                                       # Status Bar prominent items background color. Prominent items stand out from other Status Bar entries to indicate importance
   statusBarItem.prominentHoverBackground: *ORANGE                               # Status Bar prominent items background color when hovering. Prominent items stand out from other Status Bar entries to indicate importance
-  statusBar.border:
+  statusBar.border: *BG
 
   # Title Bar Colors (MacOS Only)
   titleBar.activeBackground: *BGDark                                            # Title Bar background when the window is active
