@@ -64,9 +64,9 @@
 				"path": "./theme/dark-reader-theme-b50.json"
 			},
 			{
-				"label": "Dark Reader (Brightness +50 Contrast +10)",
+				"label": "Dark Reader (Brightness +50 contrast +25)",
 				"uiTheme": "vs-dark",
-				"path": "./theme/dark-reader-theme-b50-c10.json"
+				"path": "./theme/dark-reader-theme-b50-c25.json"
 			}
 		]
 	},

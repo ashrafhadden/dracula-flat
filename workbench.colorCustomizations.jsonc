@@ -7,7 +7,7 @@ STEPS TO CREATE
 To create Dracula Dark Theme I first tweak my `workbench.colorCustomizations`
 I then lookup the associated YAML variable in `Dracula.json` which is the master
 reference file for the Dracula Official vscode theme https://github.com/dracula/visual-studio-code
-I change all associated YAML variables to the default Dark Reader Theme color #17181C
+I change all associated YAML variables to the default Dark Reader Theme color #181A1B
 The comments are references to the YAML variables used in the `dracula.yml`
 */
 
@@ -16,24 +16,24 @@ The comments are references to the YAML variables used in the `dracula.yml`
         "[Dracula]": {
             /// Dark Reader (Brightness +50)
             // YAML Variables: BG, BGDark, BGDarker
-            "breadcrumb.background": "#23242a", // BGDark
-            "editor.background": "#23242a", // BG
-            "editorGroupHeader.tabsBackground": "#23242a", // BGDarker
-            "panel.background": "#23242a", // BG
-            "sideBar.background": "#23242a", // BGDark
-            "sideBar.border": "#23242a", // Originally Empty => BG
-            "sideBarSectionHeader.background": "#23242a", // BG
-            "sideBarSectionHeader.border": "#23242a", // BGDarker
-            "statusBar.background": "#23242a", // BGDarker
-            "statusBar.border": "#23242a", // Originally Empty => BG
-            "statusBar.noFolderBackground": "#23242a", // BGDarker
-            "tab.activeBackground": "#23242a", // BG
-            "tab.border": "#23242a", // BGDarker
-            "tab.inactiveBackground": "#23242a", // BGDark
-            "terminal.background": "#23242a", // BG
-            "terminal.border": "#23242a", // Originally doesn't exist => BG
-            "titleBar.activeBackground": "#23242a", // BGDark
-            "titleBar.inactiveBackground": "#23242a" //BGDarker
+            "breadcrumb.background": "#242729", // BGDark
+            "editor.background": "#242729", // BG
+            "editorGroupHeader.tabsBackground": "#242729", // BGDarker
+            "panel.background": "#242729", // BG
+            "sideBar.background": "#242729", // BGDark
+            "sideBar.border": "#242729", // Originally Empty => BG
+            "sideBarSectionHeader.background": "#242729", // BG
+            "sideBarSectionHeader.border": "#242729", // BGDarker
+            "statusBar.background": "#242729", // BGDarker
+            "statusBar.border": "#242729", // Originally Empty => BG
+            "statusBar.noFolderBackground": "#242729", // BGDarker
+            "tab.activeBackground": "#242729", // BG
+            "tab.border": "#242729", // BGDarker
+            "tab.inactiveBackground": "#242729", // BGDark
+            "terminal.background": "#242729", // BG
+            "terminal.border": "#242729", // Originally doesn't exist => BG
+            "titleBar.activeBackground": "#242729", // BGDark
+            "titleBar.inactiveBackground": "#242729" //BGDarker
         }
     }
 }

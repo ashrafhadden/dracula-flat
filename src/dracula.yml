@@ -5,7 +5,7 @@ maintainers:
 semanticClass: theme.dracula
 dracula:
   base:
-    - &BG        '#17181C' # Dark Reader
+    - &BG        '#181A1B' # Dark Reader
     - &FG        '#F8F8F2'
     - &SELECTION '#44475A'
     - &COMMENT   '#6272A4'
@@ -45,10 +45,10 @@ dracula:
     # UI Variants
     - &BGLighter     '#424450'
     - &BGLight       '#343746' # HSV (230   , 25.71, 27.45)
-    - &BGDark        '#17181C' # Dark Reader
-    - &BGDarker      '#17181C' # Dark Reader
-    - &b50        '#23242A' # Dark Reader (Brightness +50)
-    - &b50c10        '#191B21' # Dark Reader (Brightness +50 Contrast +10)
+    - &BGDark        '#181A1B' # Dark Reader
+    - &BGDarker      '#181A1B' # Dark Reader
+    - &b50        '#242729' # Dark Reader (Brightness +50)
+    - &b50c25        '#0D1113' # Dark Reader (Brightness +50 contrast +25)
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:

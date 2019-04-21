@@ -32,9 +32,9 @@ and [Dark Reader Theme](https://github.com/ashrafhadden/dark-reader-theme) are t
 | Theme                                              | Hex       | RGB        | HSL            | ![Color Picker Boxes](https://draculatheme.com/assets/img/color-boxes/eyedropper.png) |
 | -------------------------------------------------- | --------- | ---------- | -------------- | ------------------------------------------------------------------------------------- |
 | Dracula                                            | `#282a36` | `40 42 54` | `231° 15% 18%` | ![Background Color](https://draculatheme.com/assets/img/color-boxes/background.png)   |
-| Dark Reader Theme                                | `#17181c` | `RGB`      | `HSL`          | colorimage                                                                            |
-| Dark Reader Theme (Brightness +50)               | `#23242a` | `RGB`      | `HSL`          | colorimage                                                                            |
-| Dark Reader Theme (Brightness +50 Contrast +10) | `#191b21` | `RGB`      | `HSL`          | colorimage                                                                            |
+| Dark Reader Theme                                | `#181A1B` | `RGB`      | `HSL`          | colorimage                                                                            |
+| Dark Reader Theme (Brightness +50)               | `#242729` | `RGB`      | `HSL`          | colorimage                                                                            |
+| Dark Reader Theme (Brightness +50 contrast +25) | `#191b21` | `RGB`      | `HSL`          | colorimage                                                                            |
 
 ## Install
 
@@ -50,24 +50,24 @@ Paste the following into your `settings.json` and set the theme to [Dracula](htt
   "workbench.colorCustomizations": {
     "[Dracula]": {
       /// Dark Reader (Brightness +50)
-      "breadcrumb.background": "#23242a",
-      "editor.background": "#23242a",
-      "editorGroupHeader.tabsBackground": "#23242a",
-      "panel.background": "#23242a",
-      "sideBar.background": "#23242a",
-      "sideBar.border": "#23242a",
-      "sideBarSectionHeader.background": "#23242a",
-      "sideBarSectionHeader.border": "#23242a",
-      "statusBar.background": "#23242a",
-      "statusBar.border": "#23242a",
-      "statusBar.noFolderBackground": "#23242a",
-      "tab.activeBackground": "#23242a",
-      "tab.border": "#23242a",
-      "tab.inactiveBackground": "#23242a",
-      "terminal.background": "#23242a",
-      "terminal.border": "#23242a",
-      "titleBar.activeBackground": "#23242a",
-      "titleBar.inactiveBackground": "#23242a"
+      "breadcrumb.background": "#242729",
+      "editor.background": "#242729",
+      "editorGroupHeader.tabsBackground": "#242729",
+      "panel.background": "#242729",
+      "sideBar.background": "#242729",
+      "sideBar.border": "#242729",
+      "sideBarSectionHeader.background": "#242729",
+      "sideBarSectionHeader.border": "#242729",
+      "statusBar.background": "#242729",
+      "statusBar.border": "#242729",
+      "statusBar.noFolderBackground": "#242729",
+      "tab.activeBackground": "#242729",
+      "tab.border": "#242729",
+      "tab.inactiveBackground": "#242729",
+      "terminal.background": "#242729",
+      "terminal.border": "#242729",
+      "titleBar.activeBackground": "#242729",
+      "titleBar.inactiveBackground": "#242729"
     }
   },
 }

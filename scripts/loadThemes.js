@@ -23,10 +23,10 @@ async function loadTheme(yamlFilePath) {
     const b50ThemeYAML = getb50ThemeYAML(standardThemeYAML, standardTheme);
     const b50Theme = await loadYAML(b50ThemeYAML);
 
-    const b50c10ThemeYAML = getb50c10ThemeYAML(standardThemeYAML, standardTheme);
-    const b50c10Theme = await loadYAML(b50c10ThemeYAML);
+    const b50c25ThemeYAML = getb50c25ThemeYAML(standardThemeYAML, standardTheme);
+    const b50c25Theme = await loadYAML(b50c25ThemeYAML);
 
-    return { standardTheme, b50Theme, b50c10Theme };
+    return { standardTheme, b50Theme, b50c25Theme };
 }
 
 function getb50ThemeYAML(fileContent, standardTheme) {
@@ -37,12 +37,12 @@ function getb50ThemeYAML(fileContent, standardTheme) {
     return fileContent.replace(regex, b50);
 }
 
-function getb50c10ThemeYAML(fileContent, standardTheme) {
+function getb50c25ThemeYAML(fileContent, standardTheme) {
     const BG = standardTheme.dracula.base[0];
-    const b50c10 = standardTheme.dracula.other[9];
+    const b50c25 = standardTheme.dracula.other[9];
     const regex = new RegExp(BG, 'g');
 
-    return fileContent.replace(regex, b50c10);
+    return fileContent.replace(regex, b50c25);
 }
 
 module.exports = loadTheme;

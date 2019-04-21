@@ -17,15 +17,15 @@ async function build() {
     }
 
     const extensionName = 'dark-reader-theme'
-    const { standardTheme, b50Theme, b50c10Theme } = await loadThemes(THEME_YAML_FILE);
+    const { standardTheme, b50Theme, b50c25Theme } = await loadThemes(THEME_YAML_FILE);
     const standardThemePath = path.join(THEME_DIR, `${extensionName}.json`);
     const b50ThemePath = path.join(THEME_DIR, `${extensionName}-b50.json`);
-    const b50c10ThemePath = path.join(THEME_DIR, `${extensionName}-b50-c10.json`);
+    const b50c25ThemePath = path.join(THEME_DIR, `${extensionName}-b50-c25.json`);
 
     await Promise.all([
         fsp.writeFile(standardThemePath, toJSON(standardTheme)),
         fsp.writeFile(b50ThemePath, toJSON(b50Theme)),
-        fsp.writeFile(b50c10ThemePath, toJSON(b50c10Theme)),
+        fsp.writeFile(b50c25ThemePath, toJSON(b50c25Theme)),
     ]);
 }
 
