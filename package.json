@@ -1,8 +1,8 @@
 {
-	"name": "dark-reader-theme",
+	"name": "dracula-flat-theme",
 	"version": "1.0.0",
 	"displayName": "Dark Reader Theme",
-	"homepage": "https://github.com/ashrafhadden/dark-reader-theme",
+	"homepage": "https://github.com/ashrafhadden/dracula-flat-theme",
 	"description": "Dracula theme + Dark Reader background color",
 	"publisher": "ashrafhadden",
 	"license": "MIT",
@@ -28,10 +28,10 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ashrafhadden/dark-reader-theme"
+		"url": "https://github.com/ashrafhadden/dracula-flat-theme"
 	},
 	"bugs": {
-		"url": "https://github.com/ashrafhadden/dark-reader-theme/issues"
+		"url": "https://github.com/ashrafhadden/dracula-flat-theme/issues"
 	},
 	"engines": {
 		"vscode": "^1.13.0"
@@ -44,7 +44,7 @@
 		"dark",
 		"theme",
 		"color-theme",
-		"dark-reader"
+		"dracula-flat"
 	],
 	"icon": "icon.png",
 	"galleryBanner": {
@@ -56,17 +56,17 @@
 			{
 				"label": "Dark Reader",
 				"uiTheme": "vs-dark",
-				"path": "./theme/dark-reader-theme.json"
+				"path": "./theme/dracula-flat-theme.json"
 			},
 			{
 				"label": "Dark Reader (Brightness +50)",
 				"uiTheme": "vs-dark",
-				"path": "./theme/dark-reader-theme-b50.json"
+				"path": "./theme/dracula-flat-theme-b50.json"
 			},
 			{
 				"label": "Dark Reader (Brightness +50 contrast +25)",
 				"uiTheme": "vs-dark",
-				"path": "./theme/dark-reader-theme-b50-c25.json"
+				"path": "./theme/dracula-flat-theme-b50-c25.json"
 			}
 		]
 	},

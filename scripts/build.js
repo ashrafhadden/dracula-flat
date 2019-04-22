@@ -16,7 +16,7 @@ async function build() {
         await fsp.mkdir(THEME_DIR);
     }
 
-    const extensionName = 'dark-reader-theme'
+    const extensionName = 'dracula-flat-theme'
     const { standardTheme, b50Theme, b50c25Theme } = await loadThemes(THEME_YAML_FILE);
     const standardThemePath = path.join(THEME_DIR, `${extensionName}.json`);
     const b50ThemePath = path.join(THEME_DIR, `${extensionName}-b50.json`);

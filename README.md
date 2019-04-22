@@ -27,7 +27,7 @@ of having all your apps the same color!
 ### Colors
 
 The only difference between [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
-and [Dark Reader Theme](https://github.com/ashrafhadden/dark-reader-theme) are the background colors which are listed here...
+and [Dark Reader Theme](https://github.com/ashrafhadden/dracula-flat-theme) are the background colors which are listed here...
 
 | Theme                                              | Hex       | RGB        | HSL            | ![Color Picker Boxes](https://draculatheme.com/assets/img/color-boxes/eyedropper.png) |
 | -------------------------------------------------- | --------- | ---------- | -------------- | ------------------------------------------------------------------------------------- |
@@ -77,4 +77,4 @@ Paste the following into your `settings.json` and set the theme to [Dracula](htt
 
 ## Feedback
 
-Let me know what you think! Feel free to open issues and PR's over at https://github.com/ashrafhadden/dark-reader-theme
+Let me know what you think! Feel free to open issues and PR's over at https://github.com/ashrafhadden/dracula-flat-theme
