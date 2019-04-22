@@ -1,9 +1,9 @@
 {
 	"name": "dracula-flat-theme",
 	"version": "1.0.0",
-	"displayName": "Dark Reader Theme",
+	"displayName": "Dracula Flat Theme",
 	"homepage": "https://github.com/ashrafhadden/dracula-flat-theme",
-	"description": "Dracula theme + Dark Reader background color",
+	"description": "Dracula theme + Dracula Flat background color",
 	"publisher": "ashrafhadden",
 	"license": "MIT",
 	"scripts": {
@@ -54,17 +54,17 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Dark Reader",
+				"label": "Dracula Flat",
 				"uiTheme": "vs-dark",
 				"path": "./theme/dracula-flat-theme.json"
 			},
 			{
-				"label": "Dark Reader (Brightness +50)",
+				"label": "Dracula Flat (Brightness +50)",
 				"uiTheme": "vs-dark",
 				"path": "./theme/dracula-flat-theme-b50.json"
 			},
 			{
-				"label": "Dark Reader (Brightness +50 contrast +25)",
+				"label": "Dracula Flat (Brightness +50 contrast +25)",
 				"uiTheme": "vs-dark",
 				"path": "./theme/dracula-flat-theme-b50-c25.json"
 			}

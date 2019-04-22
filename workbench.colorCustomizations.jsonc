@@ -1,20 +1,20 @@
 // This file referenced in `## Light Install` section of README
 // I also use this as my personal reference on how to tweak the original
-// Dracula Official theme to become Dark Reader Theme
+// Dracula Official theme to become Dracula Flat Theme
 
 /*
 STEPS TO CREATE
 To create Dracula Dark Theme I first tweak my `workbench.colorCustomizations`
 I then lookup the associated YAML variable in `Dracula.json` which is the master
 reference file for the Dracula Official vscode theme https://github.com/dracula/visual-studio-code
-I change all associated YAML variables to the default Dark Reader Theme color #181A1B
+I change all associated YAML variables to the default Dracula Flat Theme color #181A1B
 The comments are references to the YAML variables used in the `dracula.yml`
 */
 
 {
     "workbench.colorCustomizations": {
         "[Dracula]": {
-            /// Dark Reader (Brightness +50)
+            /// Dracula Flat (Brightness +50)
             // YAML Variables: BG, BGDark, BGDarker
             "breadcrumb.background": "#242729", // BGDark
             "editor.background": "#242729", // BG

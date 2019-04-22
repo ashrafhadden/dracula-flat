@@ -1,11 +1,11 @@
-<!-- TODO: Replace `Dark Reader Theme` link in Colors section w/ marketplace URL -->
+<!-- TODO: Replace `Dracula Flat Theme` link in Colors section w/ marketplace URL -->
 
-# Dark Reader Theme for [Visual Studio Code](http://code.visualstudio.com)
+# Dracula Flat Theme for [Visual Studio Code](http://code.visualstudio.com)
 
 > A dark theme for [Visual Studio Code](http://code.visualstudio.com)
 
-- Dracula theme + Dark Reader background color
-- Designed to match with my [Dark Reader chrome themes](https://www.themebeta.com/chrome/user/510929)
+- Dracula theme + Dracula Flat background color
+- Designed to match with my [Dracula Flat chrome themes](https://www.themebeta.com/chrome/user/510929)
 
 Also checkout...
 
@@ -17,7 +17,7 @@ Also checkout...
 ## About
 
 In my love for all things dark mode I decided to create a VSCode theme that would perfectly
-match [Dark Reader](https://darkreader.org/) and my [Dark Reader chrome themes](https://www.themebeta.com/chrome/user/510929)
+match [Dracula Flat](https://darkreader.org/) and my [Dracula Flat chrome themes](https://www.themebeta.com/chrome/user/510929)
 using my favorite syntax highlight colors [Dracula](https://draculatheme.com/).
 
 I find that its much easier on the eyes when tabbing back and forth between Chrome and
@@ -27,14 +27,14 @@ of having all your apps the same color!
 ### Colors
 
 The only difference between [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
-and [Dark Reader Theme](https://github.com/ashrafhadden/dracula-flat-theme) are the background colors which are listed here...
+and [Dracula Flat Theme](https://github.com/ashrafhadden/dracula-flat-theme) are the background colors which are listed here...
 
 | Theme                                              | Hex       | RGB        | HSL            | ![Color Picker Boxes](https://draculatheme.com/assets/img/color-boxes/eyedropper.png) |
 | -------------------------------------------------- | --------- | ---------- | -------------- | ------------------------------------------------------------------------------------- |
 | Dracula                                            | `#282a36` | `40 42 54` | `231° 15% 18%` | ![Background Color](https://draculatheme.com/assets/img/color-boxes/background.png)   |
-| Dark Reader Theme                                | `#181A1B` | `RGB`      | `HSL`          | colorimage                                                                            |
-| Dark Reader Theme (Brightness +50)               | `#242729` | `RGB`      | `HSL`          | colorimage                                                                            |
-| Dark Reader Theme (Brightness +50 contrast +25) | `#191b21` | `RGB`      | `HSL`          | colorimage                                                                            |
+| Dracula Flat Theme                                | `#181A1B` | `RGB`      | `HSL`          | colorimage                                                                            |
+| Dracula Flat Theme (Brightness +50)               | `#242729` | `RGB`      | `HSL`          | colorimage                                                                            |
+| Dracula Flat Theme (Brightness +50 contrast +25) | `#191b21` | `RGB`      | `HSL`          | colorimage                                                                            |
 
 ## Install
 
@@ -49,7 +49,7 @@ Paste the following into your `settings.json` and set the theme to [Dracula](htt
 
   "workbench.colorCustomizations": {
     "[Dracula]": {
-      /// Dark Reader (Brightness +50)
+      /// Dracula Flat (Brightness +50)
       "breadcrumb.background": "#242729",
       "editor.background": "#242729",
       "editorGroupHeader.tabsBackground": "#242729",
