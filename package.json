@@ -8,7 +8,7 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "node ./scripts/build.js",
-		"test": "node ./scripts/dev.js",
+		"test": "node ./scripts/test.js",
 		"lint": "node ./scripts/lint.js",
 		"start": "vsce package && code --install-extension ${npm_package_name}-${npm_package_version}.vsix",
 		"vscode:prepublish": "npm update && npm run build"
@@ -59,19 +59,16 @@
 				"path": "./theme/dracula-flat-theme.json"
 			},
 			{
-				"label": "Dracula Flat (Brightness +50)",
-				"uiTheme": "vs-dark",
-				"path": "./theme/dracula-flat-theme-b50.json"
-			},
-			{
-				"label": "Dracula Flat (Brightness +50 contrast +25)",
-				"uiTheme": "vs-dark",
-				"path": "./theme/dracula-flat-theme-b50-c25.json"
+				"label": "Dracula Flat Light",
+				"uiTheme": "vs",
+				"path": "./theme/dracula-flat-theme-light.json"
 			}
 		]
 	},
 	"devDependencies": {
+		"chroma-js": "^2.0.3",
 		"js-yaml": "^3.13.1",
 		"prettier": "^1.17.0"
-	}
+	},
+	"dependencies": {}
 }

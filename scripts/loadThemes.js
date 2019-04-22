@@ -1,7 +1,8 @@
 'use strict';
 
-const fs = require('fs');
+// const fs = require('fs');
 const fsp = require('./fsp');
+const chroma = require('chroma-js');
 const { loadYAML } = require('./yaml');
 
 /**
@@ -20,29 +21,34 @@ async function loadTheme(yamlFilePath) {
     const standardThemeYAML = await readFileRetrying(yamlFilePath);
     const standardTheme = await loadYAML(standardThemeYAML);
 
-    const b50ThemeYAML = getb50ThemeYAML(standardThemeYAML, standardTheme);
-    const b50Theme = await loadYAML(b50ThemeYAML);
+    const lightThemeYAML = getLightThemeYAML(standardThemeYAML, standardTheme);
+    const lightTheme = await loadYAML(lightThemeYAML);
 
-    const b50c25ThemeYAML = getb50c25ThemeYAML(standardThemeYAML, standardTheme);
-    const b50c25Theme = await loadYAML(b50c25ThemeYAML);
-
-    return { standardTheme, b50Theme, b50c25Theme };
+    return { standardTheme, lightTheme };
 }
 
-function getb50ThemeYAML(fileContent, standardTheme) {
+function getLightThemeYAML(fileContent, standardTheme) {
+    // fs.writeFileSync('fileContentBefore.js', fileContent);
     const BG = standardTheme.dracula.base[0];
-    const b50 = standardTheme.dracula.other[8];
-    const regex = new RegExp(BG, 'g');
+    const FG = standardTheme.dracula.base[1];
+    const YELLOW = standardTheme.dracula.base[10];
+    const ansiBrightYellow = standardTheme.dracula.ansi[11];
 
-    return fileContent.replace(regex, b50);
-}
+    const _backgroundColorsOther = standardTheme.dracula.other.slice(4, 6);
+    const backgroundColors = [BG, ..._backgroundColorsOther];
+    console.log(`backgroundColors = ${backgroundColors}`);
 
-function getb50c25ThemeYAML(fileContent, standardTheme) {
-    const BG = standardTheme.dracula.base[0];
-    const b50c25 = standardTheme.dracula.other[9];
-    const regex = new RegExp(BG, 'g');
+    return fileContent.replace(/#[0-9A-F]{6}/g, color => {
+        if (color === '#FFFFFF') {
+            return BG;
+        } else if (backgroundColors.includes(color)) {
+            // console.log(`${color} -> ${FG}`);
+            return FG;
+        }
+        return chroma(color).darken(0.66);
+    });
 
-    return fileContent.replace(regex, b50c25);
+    // fs.writeFileSync('fileContentAfter.js', fileContent);
 }
 
 module.exports = loadTheme;

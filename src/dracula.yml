@@ -5,7 +5,7 @@ maintainers:
 semanticClass: theme.dracula
 dracula:
   base:
-    - &BG        '#181A1B' # Dracula Flat
+    - &BG        '#282A36' # Dracula Background https://github.com/dracula/dracula-theme#color-palette
     - &FG        '#F8F8F2'
     - &SELECTION '#44475A'
     - &COMMENT   '#6272A4'
@@ -45,10 +45,8 @@ dracula:
     # UI Variants
     - &BGLighter     '#424450'
     - &BGLight       '#343746' # HSV (230   , 25.71, 27.45)
-    - &BGDark        '#181A1B' # Dracula Flat
-    - &BGDarker      '#181A1B' # Dracula Flat
-    - &b50        '#242729' # Dracula Flat (Brightness +50)
-    - &b50c25        '#0D1113' # Dracula Flat (Brightness +50 contrast +25)
+    - &BGDark        '#282A36' # Dracula Background https://github.com/dracula/dracula-theme#color-palette
+    - &BGDarker      '#282A36' # Dracula Background https://github.com/dracula/dracula-theme#color-palette
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:

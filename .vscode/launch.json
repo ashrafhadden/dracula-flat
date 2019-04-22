@@ -6,6 +6,13 @@
 	"version": "0.2.0",
   "configurations": [
     {
+      "name": "Build",
+      "type": "node-chakracore-time-travel-debugger",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/build.js",
+      "cwd": "${workspaceFolder}"
+    },
+    {
       "name": "Extension",
       "type": "extensionHost",
       "request": "launch",

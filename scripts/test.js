@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { build } = require('./build');
 
-const buttonPressesLogFile = path.join(__dirname, '../src/dracula.yml');
+const buttonPressesLogFile = path.join(__dirname, '../scripts/');
 
 console.log(`Watching for file changes on ${buttonPressesLogFile}`);
 
