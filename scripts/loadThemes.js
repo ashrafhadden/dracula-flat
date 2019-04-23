@@ -1,9 +1,11 @@
 'use strict';
 
-// const fs = require('fs');
-const fsp = require('./fsp');
-const chroma = require('chroma-js');
+const { exec } = require('child_process');
+const { inspect } = require('util');
 const { loadYAML } = require('./yaml');
+const chroma = require('chroma-js');
+const fs = require('fs');
+const fsp = require('./fsp');
 
 /**
  * On dev mode, sometimes when we read the file the return value of readFile
@@ -28,27 +30,65 @@ async function loadTheme(yamlFilePath) {
 }
 
 function getLightThemeYAML(fileContent, standardTheme) {
-    // fs.writeFileSync('fileContentBefore.js', fileContent);
     const BG = standardTheme.dracula.base[0];
     const FG = standardTheme.dracula.base[1];
-    const YELLOW = standardTheme.dracula.base[10];
-    const ansiBrightYellow = standardTheme.dracula.ansi[11];
 
-    const _backgroundColorsOther = standardTheme.dracula.other.slice(4, 6);
-    const backgroundColors = [BG, ..._backgroundColorsOther];
-    console.log(`backgroundColors = ${backgroundColors}`);
+    const otherBG = standardTheme.dracula.other.slice(4, 6);
+    const allBG = [BG, ...otherBG];
 
-    return fileContent.replace(/#[0-9A-F]{6}/g, color => {
-        if (color === '#FFFFFF') {
-            return BG;
-        } else if (backgroundColors.includes(color)) {
-            // console.log(`${color} -> ${FG}`);
-            return FG;
+    let contrastReport = [];
+    const fileContentModified = fileContent.replace(/#[0-9A-F]{6}/g, color => {
+        if (color === FG) return BG; // invert Dracula foreground #F8F8F2
+        if (allBG.includes(color)) return FG; // invert Dracula background #282A36
+
+        // Darken colors until constrast ratio compliant with WCAG
+        // https://vis4.net/chromajs/#chroma-contrast
+        // Minimum (Level AA) 4.5
+        // Enhanced (Level AAA) 7
+        let originalColor = color;
+        let timesDarkened = 0;
+        while (chroma.contrast(color, FG) < 4.5) {
+            timesDarkened++;
+            color = chroma(color).darken(0.001); // lower = more accurate
         }
-        return chroma(color).darken(0.66);
+        contrastReport.push({
+            Original: originalColor,
+            Darkened: chroma(color).hex(),
+            WCAG: chroma.contrast(color, FG),
+            timesDarkened: timesDarkened,
+        });
+
+        return color;
     });
 
-    // fs.writeFileSync('fileContentAfter.js', fileContent);
+    function getDateTime() {
+        const date = new Date();
+        let hour = date.getHours();
+        hour = (hour < 10 ? '0' : '') + hour;
+        let min = date.getMinutes();
+        min = (min < 10 ? '0' : '') + min;
+        let sec = date.getSeconds();
+        sec = (sec < 10 ? '0' : '') + sec;
+        let year = date.getFullYear();
+        let month = date.getMonth() + 1;
+        month = (month < 10 ? '0' : '') + month;
+        let day = date.getDate();
+        day = (day < 10 ? '0' : '') + day;
+        return (
+            year + ':' + month + ':' + day + ':' + hour + ':' + min + ':' + sec
+        );
+    }
+
+    contrastReport.unshift({
+        contrastRatioTarget: 4.5,
+        created: getDateTime(),
+    });
+    console.log(inspect(contrastReport));
+    fs.writeFileSync('contrastReport.js', inspect(contrastReport));
+    exec('code contrastReport.js')
+    exec('printf "done"')
+
+    return fileContentModified;
 }
 
 module.exports = loadTheme;
