@@ -1,74 +1,84 @@
 {
-	"name": "dracula-flat-theme",
-	"version": "1.0.0",
-	"displayName": "Dracula Flat Theme",
-	"homepage": "https://github.com/ashrafhadden/dracula-flat-theme",
-	"description": "Dracula theme + Dracula Flat background color",
-	"publisher": "ashrafhadden",
-	"license": "MIT",
-	"scripts": {
-		"build": "node ./scripts/build.js",
-		"test": "node ./scripts/test.js",
-		"lint": "node ./scripts/lint.js",
-		"start": "vsce package && code --install-extension ${npm_package_name}-${npm_package_version}.vsix",
-		"vscode:prepublish": "npm update && npm run build"
-	},
-	"maintainers": [
-		"Ashraf Hadden <ashrafhadden@gmail.com>"
-	],
-	"contributors": [
-		"Zeno Rocha",
-		"Derek P Sifford",
-		"Krzysztof Wisznarewski",
-		"Daniel Ramos",
-		"Eric Jackson",
-		"Elliott Pogue",
-		"Ajit Singh",
-		"Teddy Bradford"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ashrafhadden/dracula-flat-theme"
-	},
-	"bugs": {
-		"url": "https://github.com/ashrafhadden/dracula-flat-theme/issues"
-	},
-	"engines": {
-		"vscode": "^1.13.0"
-	},
-	"categories": [
-		"Themes"
-	],
-	"keywords": [
-		"dracula",
-		"dark",
-		"theme",
-		"color-theme",
-		"dracula-flat"
-	],
-	"icon": "icon.png",
-	"galleryBanner": {
-		"color": "#3c4557",
-		"theme": "dark"
-	},
-	"contributes": {
-		"themes": [
-			{
-				"label": "Dracula Flat",
-				"uiTheme": "vs-dark",
-				"path": "./theme/dracula-flat-theme.json"
-			},
-			{
-				"label": "Dracula Flat Light",
-				"uiTheme": "vs",
-				"path": "./theme/dracula-flat-theme-light.json"
-			}
-		]
-	},
-	"devDependencies": {
-		"chroma-js": "^2.0.3",
-		"js-yaml": "^3.13.1",
-		"prettier": "^1.17.0"
-	},
-	"dependencies": {}
+  "name": "dracula-flat",
+  "version": "1.0.0",
+  "description": "Flat-style Dracula theme",
+  "keywords": [
+    "color-theme",
+    "dark",
+    "dracula",
+    "dracula-flat",
+    "theme"
+  ],
+  "homepage": "https://github.com/ashrafhadden/dracula-flat",
+  "bugs": {
+    "url": "https://github.com/ashrafhadden/dracula-flat/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashrafhadden/dracula-flat"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Ashraf Hadden",
+    "email": "ashrafhadden@gmail.com",
+    "url": "https://github.com/ashrafhadden"
+  },
+  "contributors": [
+    "Zeno Rocha",
+    "Derek P Sifford",
+    "Krzysztof Wisznarewski",
+    "Daniel Ramos",
+    "Eric Jackson",
+    "Elliott Pogue",
+    "Ajit Singh",
+    "Teddy Bradford"
+  ],
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "lint": "node ./scripts/lint.js",
+    "start": "vsce package && code --install-extension ${npm_package_name}-${npm_package_version}.vsix",
+    "test": "node ./scripts/test.js",
+    "vscode:prepublish": "npm update && npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chroma-js": "^2.0.3",
+    "js-yaml": "^3.13.1",
+    "prettier": "^1.17.0"
+  },
+  "engines": {
+    "vscode": "^1.13.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Dracula Flat",
+        "uiTheme": "vs-dark",
+        "path": "./theme/dracula-flat.json"
+      },
+      {
+        "label": "Dracula Flat Light",
+        "uiTheme": "vs",
+        "path": "./theme/dracula-flat-light.json"
+      },
+      {
+        "label": "Dracula Flat Light Contrast",
+        "uiTheme": "vs-dark",
+        "path": "./theme/dracula-flat-light-contrast.json"
+      }
+    ]
+  },
+  "displayName": "Dracula Flat",
+  "galleryBanner": {
+    "color": "#3c4557",
+    "theme": "dark"
+  },
+  "icon": "icon.png",
+  "maintainers": [
+    "Ashraf Hadden <ashrafhadden@gmail.com>"
+  ],
+  "publisher": "ashrafhadden"
 }

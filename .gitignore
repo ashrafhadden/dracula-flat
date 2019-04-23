@@ -3,3 +3,4 @@ theme
 src/tests
 bin
 *.vsix
+_ttd_log_
