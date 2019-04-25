@@ -1,6 +1,7 @@
 node_modules
-theme
+themes
 src/tests
 bin
 *.vsix
 _ttd_log_
+contrastReport*
