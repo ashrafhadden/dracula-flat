@@ -14,16 +14,6 @@ Also checkout...
 
 ![Screenshot](https://draculatheme.com/assets/img/screenshots/vscode.png)
 
-## About
-
-In my love for all things dark mode I decided to create a VSCode theme that would perfectly
-match [Dracula Flat](https://darkreader.org/) and my [Dracula Flat chrome themes](https://www.themebeta.com/chrome/user/510929)
-using my favorite syntax highlight colors [Dracula](https://draculatheme.com/).
-
-I find that its much easier on the eyes when tabbing back and forth between Chrome and
-VSCode when all the background colors are the same. Not to mention the pleasing effect
-of having all your apps the same color!
-
 ### Colors
 
 The only difference between [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
@@ -40,8 +30,9 @@ and [Dracula Flat Theme](https://github.com/ashrafhadden/dracula-flat-theme) are
 
 ### Light Install
 > For those who prefer [tweaking themes via settings](https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme)
+> This has the added advantage of automatically including the latest Dracula Official theme updates
 
-Paste the following into your `settings.json` and set the theme to [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula).
+Paste the following into your `settings.json` and set VSCode theme to [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula).
 
 ```json
 // settings.json
@@ -50,24 +41,24 @@ Paste the following into your `settings.json` and set the theme to [Dracula](htt
   "workbench.colorCustomizations": {
     "[Dracula]": {
       /// Dracula Flat (Brightness +50)
-      "breadcrumb.background": "#242729",
-      "editor.background": "#242729",
-      "editorGroupHeader.tabsBackground": "#242729",
-      "panel.background": "#242729",
-      "sideBar.background": "#242729",
-      "sideBar.border": "#242729",
-      "sideBarSectionHeader.background": "#242729",
-      "sideBarSectionHeader.border": "#242729",
-      "statusBar.background": "#242729",
-      "statusBar.border": "#242729",
-      "statusBar.noFolderBackground": "#242729",
-      "tab.activeBackground": "#242729",
-      "tab.border": "#242729",
-      "tab.inactiveBackground": "#242729",
-      "terminal.background": "#242729",
-      "terminal.border": "#242729",
-      "titleBar.activeBackground": "#242729",
-      "titleBar.inactiveBackground": "#242729"
+      "breadcrumb.background": "'#282A36",
+      "editor.background": "'#282A36",
+      "editorGroupHeader.tabsBackground": "'#282A36",
+      "panel.background": "'#282A36",
+      "sideBar.background": "'#282A36",
+      "sideBar.border": "'#282A36",
+      "sideBarSectionHeader.background": "'#282A36",
+      "sideBarSectionHeader.border": "'#282A36",
+      "statusBar.background": "'#282A36",
+      "statusBar.border": "'#282A36",
+      "statusBar.noFolderBackground": "'#282A36",
+      "tab.activeBackground": "'#282A36",
+      "tab.border": "'#282A36",
+      "tab.inactiveBackground": "'#282A36",
+      "terminal.background": "'#282A36",
+      "terminal.border": "'#282A36",
+      "titleBar.activeBackground": "'#282A36",
+      "titleBar.inactiveBackground": "'#282A36"
     }
   },
 }

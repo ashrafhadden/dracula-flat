@@ -4,7 +4,7 @@ const path = require('path');
 const fsp = require('./fsp');
 const loadThemes = require('./loadThemes');
 
-const THEME_DIR = path.join(__dirname, '..', 'theme');
+const THEME_DIR = path.join(__dirname, '..', 'themes');
 const THEME_YAML_FILE = path.join(__dirname, '..', 'src', 'dracula.yml');
 
 function toJSON(theme) {
@@ -16,11 +16,11 @@ async function build() {
         await fsp.mkdir(THEME_DIR);
     }
 
-    const extensionName = 'dracula-flat'
+    const extensionName = process.env.npm_package_name
     const { standardTheme, lightTheme, lightContrastTheme } = await loadThemes(THEME_YAML_FILE);
     const standardThemePath = path.join(THEME_DIR, `${extensionName}.json`);
     const lightThemePath = path.join(THEME_DIR, `${extensionName}-light.json`);
-    const lightContrastThemePath = path.join(THEME_DIR, `${extensionName}-light-contrast.json`);
+    const lightContrastThemePath = path.join(THEME_DIR, `${extensionName}-light-darker.json`);
 
     await Promise.all([
         fsp.writeFile(standardThemePath, toJSON(standardTheme)),

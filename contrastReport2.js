@@ -1,6 +1,6 @@
 [ { theme: 'Dracula Light Contrast',
     contrastRatioTarget: 7,
-    created: '2019:04:24:17:31:01' },
+    created: '2019:04:24:20:56:34' },
   { Original: '#44475A',
     Darkened: '#44475a',
     WCAG: 8.585101622152614,

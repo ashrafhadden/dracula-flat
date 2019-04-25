@@ -1,8 +1,15 @@
-src/**
-.editorconfig
-node_modules
-build.js
-.github/*
-.vscode/**
-bootstrap.sh
-known_issues.md
+# Ignore Everything
+*
+
+# Except...
+!icon.png
+!LICENSE
+!README.md
+!CHANGELOG.md
+
+# vsce does not fully respect '*', ignore these as well...
+.github
+.vscode
+screenshots
+scripts
+src

@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "Flat-style Dracula theme",
   "keywords": [
-    "color-theme",
-    "dark",
     "dracula",
-    "dracula-flat",
-    "theme"
+    "flat-design",
+    "vscode-theme"
   ],
   "homepage": "https://github.com/ashrafhadden/dracula-flat",
   "bugs": {
@@ -24,6 +22,7 @@
     "url": "https://github.com/ashrafhadden"
   },
   "contributors": [
+    "Ashraf Hadden",
     "Zeno Rocha",
     "Derek P Sifford",
     "Krzysztof Wisznarewski",
@@ -40,7 +39,11 @@
     "test": "node ./scripts/test.js",
     "vscode:prepublish": "npm update && npm run build"
   },
-  "dependencies": {},
+  "config": {
+    "light": "Dracula Flat Light",
+    "light-darker": "Dracula Flat Light Darker",
+    "standard": "Dracula Flat"
+  },
   "devDependencies": {
     "chroma-js": "^2.0.3",
     "js-yaml": "^3.13.1",
@@ -57,23 +60,23 @@
       {
         "label": "Dracula Flat",
         "uiTheme": "vs-dark",
-        "path": "./theme/dracula-flat.json"
+        "path": "./themes/dracula-flat.json"
       },
       {
         "label": "Dracula Flat Light",
         "uiTheme": "vs",
-        "path": "./theme/dracula-flat-light.json"
+        "path": "./themes/dracula-flat-light.json"
       },
       {
-        "label": "Dracula Flat Light Contrast",
+        "label": "Dracula Flat Light Darker",
         "uiTheme": "vs-dark",
-        "path": "./theme/dracula-flat-light-contrast.json"
+        "path": "./themes/dracula-flat-light-darker.json"
       }
     ]
   },
   "displayName": "Dracula Flat",
   "galleryBanner": {
-    "color": "#3c4557",
+    "color": "#282A36",
     "theme": "dark"
   },
   "icon": "icon.png",

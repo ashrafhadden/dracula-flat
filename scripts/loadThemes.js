@@ -1,6 +1,5 @@
 'use strict';
 
-// const { exec } = require('child_process');
 const { inspect } = require('util');
 const { loadYAML } = require('./yaml');
 const chroma = require('chroma-js');
@@ -42,13 +41,13 @@ async function loadTheme(yamlFilePath) {
     const lightThemeYAML = getLightThemeYAML(standardThemeYAML, standardTheme);
     const lightTheme = await loadYAML(lightThemeYAML);
 
-    const lightContrastThemeYAML = getLightContrastThemeYAML(
+    const lightDarkerThemeYAML = getLightDarkerThemeYAML(
         standardThemeYAML,
         standardTheme
     );
-    const lightContrastTheme = await loadYAML(lightContrastThemeYAML);
+    const lightDarkerTheme = await loadYAML(lightDarkerThemeYAML);
 
-    return { standardTheme, lightTheme, lightContrastTheme };
+    return { standardTheme, lightTheme, lightDarkerTheme };
 }
 
 function getLightThemeYAML(fileContent, standardTheme) {
@@ -84,19 +83,16 @@ function getLightThemeYAML(fileContent, standardTheme) {
     });
 
     contrastReport.unshift({
-        theme: 'Dracula Light',
+        theme: `${process.env.npm_package_name} Light`,
         contrastRatioTarget: 4.5,
         created: getDateTime(),
     });
     fs.writeFileSync('contrastReport.js', inspect(contrastReport));
-    // console.log(inspect(contrastReport));
-    // exec('code contrastReport.js');
-    // exec('echo done');
 
     return fileContentModified;
 }
 
-function getLightContrastThemeYAML(fileContent, standardTheme) {
+function getLightDarkerThemeYAML(fileContent, standardTheme) {
     const BG = standardTheme.dracula.base[0];
     const FG = standardTheme.dracula.base[1];
 
@@ -129,14 +125,11 @@ function getLightContrastThemeYAML(fileContent, standardTheme) {
     });
 
     contrastReport.unshift({
-        theme: 'Dracula Light Contrast',
+        theme: `${process.env.npm_package_name} Light Darker`,
         contrastRatioTarget: 7,
         created: getDateTime(),
     });
     fs.writeFileSync('contrastReport2.js', inspect(contrastReport));
-    // console.log(inspect(contrastReport));
-    // exec('code contrastReport2.js');
-    // exec('echo done');
 
     return fileContentModified;
 }
