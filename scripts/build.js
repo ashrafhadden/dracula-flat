@@ -17,15 +17,15 @@ async function build() {
     }
 
     const extensionName = process.env.npm_package_name
-    const { standardTheme, lightTheme, lightContrastTheme } = await loadThemes(THEME_YAML_FILE);
+    const { standardTheme, lightTheme, lightDarkerTheme } = await loadThemes(THEME_YAML_FILE);
     const standardThemePath = path.join(THEME_DIR, `${extensionName}.json`);
     const lightThemePath = path.join(THEME_DIR, `${extensionName}-light.json`);
-    const lightContrastThemePath = path.join(THEME_DIR, `${extensionName}-light-darker.json`);
+    const lightDarkerThemePath = path.join(THEME_DIR, `${extensionName}-light-darker.json`);
 
     await Promise.all([
         fsp.writeFile(standardThemePath, toJSON(standardTheme)),
         fsp.writeFile(lightThemePath, toJSON(lightTheme)),
-        fsp.writeFile(lightContrastThemePath, toJSON(lightContrastTheme)),
+        fsp.writeFile(lightDarkerThemePath, toJSON(lightDarkerTheme)),
     ]);
 }
 

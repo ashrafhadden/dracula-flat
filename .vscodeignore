@@ -7,7 +7,7 @@
 !README.md
 !CHANGELOG.md
 
-# vsce does not fully respect '*', ignore these as well...
+# `vsce package` does not fully respect `*`, ignore these as well...
 .github
 .vscode
 screenshots

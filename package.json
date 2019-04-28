@@ -69,7 +69,7 @@
       },
       {
         "label": "Dracula Flat Light Darker",
-        "uiTheme": "vs-dark",
+        "uiTheme": "vs",
         "path": "./themes/dracula-flat-light-darker.json"
       }
     ]

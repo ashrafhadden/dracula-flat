@@ -5,3 +5,5 @@ bin
 *.vsix
 _ttd_log_
 contrastReport*
+fileContent.yml
+README.html # genereated sometimes by a MD extension bug

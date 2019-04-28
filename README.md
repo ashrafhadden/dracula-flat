@@ -1,71 +1,78 @@
 <!-- TODO: Replace `Dracula Flat Theme` link in Colors section w/ marketplace URL -->
 
-# Dracula Flat Theme for [Visual Studio Code](http://code.visualstudio.com)
+# [Flat](https://en.wikipedia.org/wiki/Flat_design)-style [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) theme for [VSCode](http://code.visualstudio.com)
 
-> A dark theme for [Visual Studio Code](http://code.visualstudio.com)
+## Dracula Flat
 
-- Dracula theme + Dracula Flat background color
-- Designed to match with my [Dracula Flat chrome themes](https://www.themebeta.com/chrome/user/510929)
+![Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat.png)
 
-Also checkout...
+## Dracula Flat Light
 
-- [DarkModeList.com](https://darkmodelist.com/)
-- [awesome-dark-mode list](https://github.com/ashrafhadden/awesome-dark-mode)
+![Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light.png)
 
-![Screenshot](https://draculatheme.com/assets/img/screenshots/vscode.png)
+## Dracula Flat Light Darker
+> Same as Dracula Flat Light but with slightly darker syntax highlight colors
 
-### Colors
-
-The only difference between [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
-and [Dracula Flat Theme](https://github.com/ashrafhadden/dracula-flat-theme) are the background colors which are listed here...
-
-| Theme                                              | Hex       | RGB        | HSL            | ![Color Picker Boxes](https://draculatheme.com/assets/img/color-boxes/eyedropper.png) |
-| -------------------------------------------------- | --------- | ---------- | -------------- | ------------------------------------------------------------------------------------- |
-| Dracula                                            | `#282a36` | `40 42 54` | `231° 15% 18%` | ![Background Color](https://draculatheme.com/assets/img/color-boxes/background.png)   |
-| Dracula Flat Theme                                | `#181A1B` | `RGB`      | `HSL`          | colorimage                                                                            |
-| Dracula Flat Theme (Brightness +50)               | `#242729` | `RGB`      | `HSL`          | colorimage                                                                            |
-| Dracula Flat Theme (Brightness +50 contrast +25) | `#191b21` | `RGB`      | `HSL`          | colorimage                                                                            |
+![Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light%20Darker.png)
 
 ## Install
 
-### Light Install
-> For those who prefer [tweaking themes via settings](https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme)
-> This has the added advantage of automatically including the latest Dracula Official theme updates
+<!-- ### Marketplace -->
+
+### Quick Open <kbd>⌘</kbd> <kbd>P</kbd>
+```
+ext install ashrafhadden.dracula-flat
+```
+
+### Command Line
+```bash
+code --install-extension ashrafhadden.dracula-flat
+```
+
+### settings.json
+> For those who prefer [tweaking themes via `settings.json`](https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme)
+> This has the added advantage of automatically including the latest Dracula Official theme updates as well as being able to customize at your leisure
+
+> **Enable/Disable**: surround and `Toggle Block Comment` <kbd>⇧</kbd> <kbd>⌥</kbd> <kbd>A</kbd>
 
 Paste the following into your `settings.json` and set VSCode theme to [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula).
 
-```json
+
+```jsonc
 // settings.json
 // ...
 
   "workbench.colorCustomizations": {
     "[Dracula]": {
-      /// Dracula Flat (Brightness +50)
-      "breadcrumb.background": "'#282A36",
-      "editor.background": "'#282A36",
-      "editorGroupHeader.tabsBackground": "'#282A36",
-      "panel.background": "'#282A36",
-      "sideBar.background": "'#282A36",
-      "sideBar.border": "'#282A36",
-      "sideBarSectionHeader.background": "'#282A36",
-      "sideBarSectionHeader.border": "'#282A36",
-      "statusBar.background": "'#282A36",
-      "statusBar.border": "'#282A36",
-      "statusBar.noFolderBackground": "'#282A36",
-      "tab.activeBackground": "'#282A36",
-      "tab.border": "'#282A36",
-      "tab.inactiveBackground": "'#282A36",
-      "terminal.background": "'#282A36",
-      "terminal.border": "'#282A36",
-      "titleBar.activeBackground": "'#282A36",
-      "titleBar.inactiveBackground": "'#282A36"
+      // https://github.com/ashrafhadden/dracula-flat#settingsjson
+      "breadcrumb.background": "#282a36",
+      "editor.background": "#282a36",
+      "editorGroupHeader.tabsBackground": "#282a36",
+      "panel.background": "#282a36",
+      "sideBar.background": "#282a36",
+      "sideBar.border": "#282a36",
+      "sideBarSectionHeader.background": "#282a36",
+      "sideBarSectionHeader.border": "#282a36",
+      "statusBar.background": "#282a36",
+      "statusBar.border": "#282a36",
+      "statusBar.noFolderBackground": "#282a36",
+      "tab.activeBackground": "#282a36",
+      "tab.border": "#282a36",
+      "tab.inactiveBackground": "#282a36",
+      "terminal.background": "#282a36",
+      "terminal.border": "#282a36",
+      "titleBar.activeBackground": "#282a36",
+      "titleBar.inactiveBackground": "#282a36"
     }
   },
 }
 
 ```
-> To toggle it on and off just surround it and `Toggle Block Comment` ⇧⌥A
+
+## Methodology
+
+
 
 ## Feedback
 
-Let me know what you think! Feel free to open issues and PR's over at https://github.com/ashrafhadden/dracula-flat-theme
+Let me know what you think! Feel free to open issues and PR's over at https://github.com/ashrafhadden/dracula-flat

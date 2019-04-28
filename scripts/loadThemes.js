@@ -51,6 +51,8 @@ async function loadTheme(yamlFilePath) {
 }
 
 function getLightThemeYAML(fileContent, standardTheme) {
+    fs.writeFileSync('fileContent.yml', fileContent);
+    fs.writeFileSync('standardTheme', inspect(standardTheme));
     const BG = standardTheme.dracula.base[0];
     const FG = standardTheme.dracula.base[1];
 
@@ -58,9 +60,11 @@ function getLightThemeYAML(fileContent, standardTheme) {
     const allBG = [BG, ...otherBG];
 
     let contrastReport = [];
-    const fileContentModified = fileContent.replace(/#[0-9A-F]{6}/g, color => {
-        if (color === FG) return BG; // invert Dracula foreground #F8F8F2
-        if (allBG.includes(color)) return FG; // invert Dracula background #282A36
+    const regex = /#[0-9A-F]{3,}/gi; // https://regexr.com/4cue7
+    const fileContentModified = fileContent.replace(regex, color => {
+        // Replace Dracula Foreground w/ Background #F8F8F2 -> #282A36
+        if (color === FG) return BG;
+        if (allBG.includes(color)) return FG;
 
         // Darken colors until constrast ratio compliant with WCAG
         // https://vis4.net/chromajs/#chroma-contrast
