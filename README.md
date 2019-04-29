@@ -69,7 +69,6 @@ Paste the following into your `settings.json` and set VSCode theme to [Dracula](
     }
   },
 }
-
 ```
 
 ## What is Flat design?
