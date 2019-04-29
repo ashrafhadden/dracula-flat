@@ -81,7 +81,7 @@ When I first attempted to create a Dracula Light theme I simply switched the bac
 
 ![Dracula Flat Light (no contrast adjust) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light%20(no%20contrast%20adjust).png)
 
-As it turns out, most dark theme colors only work for dark themes :man_shrugging: When you only switch the background and foreground, the syntax hightlighting colors
+As it turns out, most dark theme colors only work for dark themes 🤷‍♂️ When you only switch the background and foreground, the syntax hightlighting colors
 are often left with very poor contrast. In the screenshot above, Yellow is nearly invisible.
 
 ### [Chroma.js](https://vis4.net/chromajs) to the rescue!
@@ -94,7 +94,7 @@ currentColor = chroma(currentColor).darken(1.5);
 
 ![Dracula Flat (darken equally) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20(darken%20equally).png)
 
-However as you can see, darkening all the syntax colors equally doesn't quite cut it. The yellows are still a bit too light and the file explorer selection highlight on the left is difficult to see. Darkening each color manually and checking by eye seemed like a lot of hard work :eyes:, so being the lazy programmer that I am, I decided to try and automate it!
+However as you can see, darkening all the syntax colors equally doesn't quite cut it. The yellows are still a bit too light and the file explorer selection highlight on the left is difficult to see. Darkening each color manually and checking by eye seemed like hard work 👀, so being the lazy programmer that I am, I decided to try and automate it!
 
 ![patrick technology GIF](https://media1.tenor.com/images/b7a43f2a884a5469c505b3b0838b6aa2/tenor.gif?itemid=5567497)
 
