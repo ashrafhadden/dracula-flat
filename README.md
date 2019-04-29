@@ -79,7 +79,7 @@ Paste the following into your `settings.json` and set VSCode theme to [Dracula](
 
 When I first attempted to create a Dracula Light theme I simply switched the background [`#282a36`](https://github.com/dracula/dracula-theme#color-palette) and foreground [`#f8f8f2`](https://github.com/dracula/dracula-theme#color-palette) colors to see what would hapen.
 
-![Dracula Flat Light (no contrast adjust) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light%20(no%20contrast%20adjust).png>>)
+![Dracula Flat Light (no contrast adjust) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light%20(no%20contrast%20adjust).png)
 
 As it turns out, most dark theme colors only work for dark themes :man_shrugging: When you only switch the background and foreground, the syntax hightlighting colors
 are often left with very poor contrast. In the screenshot above, Yellow is nearly invisible.
@@ -92,7 +92,7 @@ Thanks to the powerful color manipulation library [Chroma.js](https://github.com
 currentColor = chroma(currentColor).darken(1.5);
 ```
 
-![Dracula Flat (darken equally) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20(darken%20equally).png>)
+![Dracula Flat (darken equally) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20(darken%20equally).png)
 
 However as you can see, darkening all the syntax colors equally doesn't quite cut it. The yellows are still a bit too light and the file explorer selection highlight on the left is difficult to see. Darkening each color manually and checking by eye seemed like a lot of hard work :eyes:, so being the lazy programmer that I am, I decided to try and automate it!
 
