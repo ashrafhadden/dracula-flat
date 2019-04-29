@@ -112,7 +112,7 @@ while (chroma.contrast(currentColor, foregroundColor) < 4.5) {
 
 > While the contrast ratio between `currentColor` and `foregroundColor` is less than 4.5, darken the `currentColor` by 0.1%
 
-Which results in [Dracula Flat Light](https://github.com/ashrafhadden/dracula-flat#dracula-flat-light).
+Which results in [Dracula Flat Light](#dracula-flat-light).
 
 ### Light Theme Darker
 
@@ -124,7 +124,7 @@ while (chroma.contrast(currentColor, foregroundColor) < 7) {
 }
 ```
 
-Which results in [Dracula Flat Light Darker](https://github.com/ashrafhadden/dracula-flat#dracula-flat-light-darker).
+Which results in [Dracula Flat Light Darker](#dracula-flat-light-darker).
 This provides an even darker color syntax for those who prefer it.
 
 ## Learn more about WCAG
