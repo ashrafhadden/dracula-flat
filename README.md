@@ -4,17 +4,17 @@
 
 ## Dracula Flat
 
-![Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat.png)
+![Dracula Flat Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat.png)
 
 ## Dracula Flat Light
 
-![Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light.png)
+![Dracula Flat Light Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light.png)
 
 ## Dracula Flat Light Darker
 
 > Same as Dracula Flat Light but with slightly darker syntax highlighting colors
 
-![Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light%20Darker.png)
+![Dracula Flat Light Darker Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light%20Darker.png)
 
 ## Install
 
@@ -76,7 +76,7 @@ Paste the following into your `settings.json` and set VSCode theme to [Dracula](
 
 When I first attempted to create a Dracula Light theme I simply switched the background [`#282a36`](https://github.com/dracula/dracula-theme#color-palette) and foreground [`#f8f8f2`](https://github.com/dracula/dracula-theme#color-palette) colors to see what would hapen.
 
-![Screenshot](<https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light%20(no%20contrast%20adjust).png>)
+![Dracula Flat Light (no contrast adjust) Screenshot](<https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light%20(no%20contrast%20adjust).png>)
 
 As it turns out, most dark theme colors only work for dark themes :man_shrugging: When you only switch the background and foreground, the syntax hightlighting colors
 are often left with very poor contrast. In the screenshot above, Yellow is nearly invisible.
@@ -89,7 +89,7 @@ Thanks to the powerful color manipulation library [Chroma.js](https://github.com
 currentColor = chroma(currentColor).darken(1.5)
 ```
 
-<!-- SCREENSHOT -->
+![Dracula Flat (darken equally) Screenshot](/Users/ashrafhadden/code/dracula-flat/screenshots/Dracula Flat (darken equally).png)
 
 However as you can see, darkening all the syntax colors equally doesn't work so well. Some colors are overdarkened, whereas others are left still too bright. Darkening each color manually and checking by eye seemed like a lot of hard work :eyes:, so being the lazy programmer that I am, I decided to try and automate it :trollface:!
 
