@@ -86,28 +86,53 @@ are often left with very poor contrast. In the screenshot above, Yellow is nearl
 Thanks to the powerful color manipulation library [Chroma.js](https://github.com/gka/chroma.js), I was able to darken all the syntax colors using it's [color.darken()](https://vis4.net/chromajs/#color-darken) method.
 
 ```js
-currentColor = chroma(currentColor).darken(1.5)
+currentColor = chroma(currentColor).darken(1.5);
 ```
 
-![Dracula Flat (darken equally) Screenshot](/Users/ashrafhadden/code/dracula-flat/screenshots/Dracula Flat (darken equally).png)
+![Dracula Flat (darken equally) Screenshot](<https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20(darken%20equally).png>)
 
-However as you can see, darkening all the syntax colors equally doesn't work so well. Some colors are overdarkened, whereas others are left still too bright. Darkening each color manually and checking by eye seemed like a lot of hard work :eyes:, so being the lazy programmer that I am, I decided to try and automate it :trollface:!
+However as you can see, darkening all the syntax colors equally doesn't quite cut it. The yellows are still a bit too light and the file explorer selection highlight on the left is difficult to see. Darkening each color manually and checking by eye seemed like a lot of hard work :eyes:, so being the lazy programmer that I am, I decided to try and automate it!
 
-#### chroma.contrast()
+#### [chroma.contrast()](https://vis4.net/chromajs/#chroma-contrast)
 
-Using Chroma's .contrast method I was able to create a [`while` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) that darkened each syntax color indefinitely until it's contrast ratio reached 4.5. (4.5:1 is the WCAG's [minimum contrast reccomendation](https://www.w3.org/TR/WCAG21/#contrast-minimum) for text.)
+Using Chroma's [.contrast method](https://vis4.net/chromajs/#chroma-contrast) I was able to create a [`while` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) that darkened each syntax color indefinitely until it's contrast ratio reached 4.5. (4.5:1 is the WCAG's [minimum contrast reccomendation](https://www.w3.org/TR/WCAG21/#contrast-minimum) for text.)
 
 ```js
 while (chroma.contrast(currentColor, foregroundColor) < 4.5) {
     currentColor = chroma(currentColor).darken(0.001);
 }
 ```
-> While the contrast ratio between the `currentColor` and `foregroundColor` are less than 4.5, darken the `currentColor` by 0.1%
+
+> While the contrast ratio between `currentColor` and `foregroundColor` is less than 4.5, darken the `currentColor` by 0.1%
+
+![Dracula Flat (darken equally) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light.png)
+
+### Light Theme Darker
+
+The WCAG also has a AAA or [_"enhanced contrast reccomendation"_](https://www.w3.org/TR/WCAG21/#contrast-enhanced) of 7:1. Using the same method as above we can do the following to create a slightly darker syntax variant of the Light Theme:
+
+```js
+while (chroma.contrast(currentColor, foregroundColor) < 7) {
+    currentColor = chroma(currentColor).darken(0.001);
+}
+```
+
+![Dracula Flat (darken equally) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light%20Darker.png)
+This provides an even darker color syntax for those who prefer it.
+
+## Learn more about WCAG
+
+-   [Color contrast checker playground](https://webaim.org/resources/contrastchecker/)
+-   [Accessible color palette generator](http://colorsafe.co/)
+-   [Fantastic human-readable article on Contrast and Color Accessibility](https://webaim.org/articles/contrast/)
+-   Gregor Aisch's articles on his inspiration behind Chroma.js
+    -   [How To Avoid Equidistant HSV Colors](https://www.vis4.net/blog/2011/12/avoid-equidistant-hsv-colors/)
+    -   [Mastering Multi-hued Color Scales with Chroma.js](https://www.vis4.net/blog/2013/09/mastering-multi-hued-color-scales/)
 
 ## Special thanks to...
 
--   ![Derek S.](https://github.com/dsifford.png?size=16) [Derek Sifford](https://github.com/dsifford) for the fork and providing his auto-magical [dracula/visual-studio-code](https://github.com/dracula/visual-studio-code) build process
--   ![Derek S.](https://github.com/gka.png?size=16) [Gregor Aisch](https://github.com/gka) and his powerful color manipulation library [Chroma.js](https://vis4.net/chromajs/)
+-   ![Derek Sifford](https://github.com/dsifford.png?size=16) [Derek Sifford](https://github.com/dsifford) for [dracula/visual-studio-code](https://github.com/dracula/visual-studio-code) which I forked from and his auto-magical build process
+-   ![Gregor Aisch](https://github.com/gka.png?size=16) [Gregor Aisch](https://github.com/gka) and his passion for colors that led to [Chroma.js](https://vis4.net/chromajs/)
 
 ## Feedback
 
