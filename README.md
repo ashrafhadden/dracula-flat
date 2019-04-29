@@ -1,5 +1,3 @@
-<!-- TODO: Replace `Dracula Flat Theme` link in Colors section w/ marketplace URL -->
-
 # [Flat](https://en.wikipedia.org/wiki/Flat_design)-style [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) theme for [VSCode](http://code.visualstudio.com)
 
 ## Dracula Flat
@@ -18,7 +16,7 @@
 
 ## Install
 
-<!-- ### Marketplace -->
+Go to the VSCode Marketplace [extension page](https://marketplace.visualstudio.com/items?itemName=ashrafhadden.dracula-flat) and click `install`
 
 ### Quick Open <kbd>⌘</kbd> <kbd>P</kbd>
 
@@ -72,11 +70,16 @@ Paste the following into your `settings.json` and set VSCode theme to [Dracula](
 
 ```
 
+## What is Flat design?
+
+-   [Wikipedia](https://en.wikipedia.org/wiki/Flat_design)
+-   [Interaction-Design.org](https://www.interaction-design.org/literature/topics/flat-design)
+
 ## Light Theme Methodology
 
 When I first attempted to create a Dracula Light theme I simply switched the background [`#282a36`](https://github.com/dracula/dracula-theme#color-palette) and foreground [`#f8f8f2`](https://github.com/dracula/dracula-theme#color-palette) colors to see what would hapen.
 
-![Dracula Flat Light (no contrast adjust) Screenshot](<https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light%20(no%20contrast%20adjust).png>)
+![Dracula Flat Light (no contrast adjust) Screenshot](<https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/Dracula%20Flat%20Light%20(no%20contrast%20adjust).png>>)
 
 As it turns out, most dark theme colors only work for dark themes :man_shrugging: When you only switch the background and foreground, the syntax hightlighting colors
 are often left with very poor contrast. In the screenshot above, Yellow is nearly invisible.
@@ -93,9 +96,11 @@ currentColor = chroma(currentColor).darken(1.5);
 
 However as you can see, darkening all the syntax colors equally doesn't quite cut it. The yellows are still a bit too light and the file explorer selection highlight on the left is difficult to see. Darkening each color manually and checking by eye seemed like a lot of hard work :eyes:, so being the lazy programmer that I am, I decided to try and automate it!
 
+![patrick technology GIF](https://media1.tenor.com/images/b7a43f2a884a5469c505b3b0838b6aa2/tenor.gif?itemid=5567497)
+
 #### [chroma.contrast()](https://vis4.net/chromajs/#chroma-contrast)
 
-Using Chroma's [.contrast method](https://vis4.net/chromajs/#chroma-contrast) I was able to create a [`while` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) that darkened each syntax color indefinitely until it's contrast ratio reached 4.5. (4.5:1 is the WCAG's [minimum contrast reccomendation](https://www.w3.org/TR/WCAG21/#contrast-minimum) for text.)
+Using Chroma's [.contrast method](https://vis4.net/chromajs/#chroma-contrast) I was able to create a [`while` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) that darkened each syntax color indefinitely until it's contrast ratio reached 4.5. 4.5:1 is the WCAG's [_"Contrast (Minimum)"_](https://www.w3.org/TR/WCAG21/#contrast-minimum) recommendation for text.
 
 ```js
 while (chroma.contrast(currentColor, foregroundColor) < 4.5) {
@@ -109,7 +114,7 @@ while (chroma.contrast(currentColor, foregroundColor) < 4.5) {
 
 ### Light Theme Darker
 
-The WCAG also has a AAA or [_"enhanced contrast reccomendation"_](https://www.w3.org/TR/WCAG21/#contrast-enhanced) of 7:1. Using the same method as above we can do the following to create a slightly darker syntax variant of the Light Theme:
+The WCAG also has a AAA or [_"Contrast (Enhanced)"_](https://www.w3.org/TR/WCAG21/#contrast-enhanced) recommendation of 7:1. Using the same method as above we can do the following to create a slightly darker syntax variant of the Light Theme:
 
 ```js
 while (chroma.contrast(currentColor, foregroundColor) < 7) {
