@@ -1,4 +1,7 @@
 # [Flat](https://en.wikipedia.org/wiki/Flat_design)-style [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) theme for [VSCode](http://code.visualstudio.com)
+> What is Flat design?
+> - [Wikipedia](https://en.wikipedia.org/wiki/Flat_design)
+> - [Interaction-Design.org](https://www.interaction-design.org/literature/topics/flat-design)
 
 ## Dracula Flat
 
@@ -70,11 +73,6 @@ Paste the following into your `settings.json` and set VSCode theme to [Dracula](
   },
 }
 ```
-
-## What is Flat design?
-
--   [Wikipedia](https://en.wikipedia.org/wiki/Flat_design)
--   [Interaction-Design.org](https://www.interaction-design.org/literature/topics/flat-design)
 
 ## Light Theme Methodology
 
