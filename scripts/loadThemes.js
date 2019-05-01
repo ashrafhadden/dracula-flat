@@ -6,22 +6,6 @@ const chroma = require('chroma-js');
 const fs = require('fs');
 const fsp = require('./fsp');
 
-function getDateTime() {
-    const date = new Date();
-    let hour = date.getHours();
-    hour = (hour < 10 ? '0' : '') + hour;
-    let min = date.getMinutes();
-    min = (min < 10 ? '0' : '') + min;
-    let sec = date.getSeconds();
-    sec = (sec < 10 ? '0' : '') + sec;
-    let year = date.getFullYear();
-    let month = date.getMonth() + 1;
-    month = (month < 10 ? '0' : '') + month;
-    let day = date.getDate();
-    day = (day < 10 ? '0' : '') + day;
-    return year + ':' + month + ':' + day + ':' + hour + ':' + min + ':' + sec;
-}
-
 /**
  * On dev mode, sometimes when we read the file the return value of readFile
  * is an empty string. In those cases we need to read the file again
@@ -89,7 +73,6 @@ function getLightThemeYAML(fileContent, standardTheme) {
     contrastReport.unshift({
         theme: `${process.env.npm_package_name} Light`,
         contrastRatioTarget: 4.5,
-        created: getDateTime(),
     });
     fs.writeFileSync('contrastReport.js', inspect(contrastReport));
 
@@ -131,7 +114,6 @@ function getLightDarkerThemeYAML(fileContent, standardTheme) {
     contrastReport.unshift({
         theme: `${process.env.npm_package_name} Light Darker`,
         contrastRatioTarget: 7,
-        created: getDateTime(),
     });
     fs.writeFileSync('contrastReport2.js', inspect(contrastReport));
 
