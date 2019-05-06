@@ -4,7 +4,5 @@ src/tests
 bin
 *.vsix
 _ttd_log_
-contrastReport*
-fileContent*
-standardTheme*
+contrastReport*.js
 README.html # genereated sometimes by a MD extension bug

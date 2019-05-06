@@ -1,7 +1,5 @@
 # [Flat](https://en.wikipedia.org/wiki/Flat_design)-style [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) theme for [VSCode](http://code.visualstudio.com)
-> What is Flat design?
-> - [Wikipedia](https://en.wikipedia.org/wiki/Flat_design)
-> - [Interaction-Design.org](https://www.interaction-design.org/literature/topics/flat-design)
+A minimalist version of Dracula Official + many variants (including a [light](#Dracula-Flat-Light) theme!)
 
 ## Dracula Flat
 
@@ -109,7 +107,7 @@ while (chroma.contrast(currentColor, foregroundColor) < 4.5) {
 
 > While the contrast ratio between `currentColor` and `foregroundColor` is less than 4.5, darken the `currentColor` by 0.1%
 
-Which results in [Dracula Flat Light](#dracula-flat-light).
+Which results in [Dracula Flat Light](#Dracula-Flat-Light).
 
 ### Light Theme Darker
 
@@ -121,7 +119,7 @@ while (chroma.contrast(currentColor, foregroundColor) < 7) {
 }
 ```
 
-Which results in [Dracula Flat Light Darker](#dracula-flat-light-darker).
+Which results in [Dracula Flat Light Darker](#Dracula-Flat-Light-Darker).
 This provides an even darker color syntax for those who prefer it.
 
 ## Learn more about WCAG

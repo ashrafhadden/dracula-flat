@@ -10,10 +10,10 @@ const withAlphaType = new Type('!alpha', {
 
 const schema = Schema.create([withAlphaType]);
 
-async function loadYAML(file) {
+async function loadJSON(file) {
     return load(file, { schema });
 }
 
 module.exports = {
-    loadYAML,
+    loadJSON,
 };
