@@ -115,7 +115,7 @@ function getVariant(yaml, json, variant) {
   })
   fsp.writeFile(`contrastReport-${variant}.js`, inspect(contrastReport))
 
-  return yamlVariant.replace('Dracula Flat Theme', `Dracula Flat ${variantDisplayName} Theme`)
+  return yamlVariant.replace('Dracula.min Theme', `Dracula.min ${variantDisplayName} Theme`)
 }
 
 module.exports = loadTheme
