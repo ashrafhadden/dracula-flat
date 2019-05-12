@@ -34,7 +34,7 @@ Dracula.min is a minimal version of [Dracula Official](https://marketplace.visua
 
 ### Marketplace
 
-Go to this theme's VSCode Marketplace [extension page](https://marketplace.visualstudio.com/items?itemName=ashrafhadden.dracula.min) and click `install`
+Go to this theme's VSCode Marketplace [extension page](https://marketplace.visualstudio.com/items?itemName=ashrafhadden.dracula-dot-min) and click `install`
 
 ### Quick Open <kbd>⌘</kbd> <kbd>P</kbd>
 
