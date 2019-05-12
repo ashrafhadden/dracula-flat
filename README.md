@@ -1,46 +1,61 @@
-# [Flat](https://en.wikipedia.org/wiki/Flat_design)-style [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) theme for [VSCode](http://code.visualstudio.com)
-A minimalist version of Dracula Official + many variants (including a [light](#Dracula-Flat-Light) theme!)
+<!-- 
+TODO 
+• Add White theme Screenshots 
+• Add ## Colors used section
+-->
 
-## Dracula Flat
+# Dracula.min
+_[Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) minified 📦 Less GUI, more code._
 
-![Dracula Flat Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/dracula-flat.png)
+Minimal 🌙 Light and 🔆 Dark themes for [VSCode](https://code.visualstudio.com)
 
-## Dracula Flat Light
+-  Minimal
+-  Flat
+-  Borderless
+-  All-one-color
 
-![Dracula Flat Light Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/dracula-flat-light.png)
+Dracula.min is a minimal version of [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) for [VSCode](https://code.visualstudio.com/). I was inspired by the beautiful seamless style of [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme) which I fell in love with for its immersive feeling and distraction-free UI.
 
-## Dracula Flat Light Darker
+## Dracula.min
 
-> Same as Dracula Flat Light but with slightly darker syntax highlighting colors
+![Dracula.min Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min.png)
 
-![Dracula Flat Light Darker Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/dracula-flat-light-darker.png)
+## Dracula.min Light
+
+![Dracula.min Light Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min-light.png)
+
+## Dracula.min Light Darker
+
+> Same as Dracula.min Light but with slightly darker syntax highlighting colors
+
+![Dracula.min Light Darker Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min-light-darker.png)
 
 ## Install
 
 ### Marketplace
 
-Go to the VSCode Marketplace [extension page](https://marketplace.visualstudio.com/items?itemName=ashrafhadden.dracula-flat) and click `install`
+Go to this theme's VSCode Marketplace [extension page](https://marketplace.visualstudio.com/items?itemName=ashrafhadden.dracula.min) and click `install`
 
 ### Quick Open <kbd>⌘</kbd> <kbd>P</kbd>
 
 ```
-ext install ashrafhadden.dracula-flat
+ext install ashrafhadden.dracula.min
 ```
 
 ### Command Line
 
 ```bash
-code --install-extension ashrafhadden.dracula-flat
+code --install-extension ashrafhadden.dracula.min
 ```
 
 ### settings.json
 
-> For those who prefer [tweaking themes via `settings.json`](https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme)
-> This has the added advantage of automatically including the latest [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) theme updates as well as being able to customize at your leisure
+For those who prefer [tweaking themes via `settings.json`](https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme), here are all the settings you need to mimic this theme. This has the added advantage of automatically including the latest [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) theme updates.
 
-> **Enable/Disable**: surround and `Toggle Block Comment` <kbd>⇧</kbd> <kbd>⌥</kbd> <kbd>A</kbd>
+**Enable/Disable**: surround and `Toggle Block Comment` <kbd>⇧</kbd> <kbd>⌥</kbd> <kbd>A</kbd>
 
-Paste the following into your `settings.json` and set VSCode theme to [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
+1. Set theme to [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
+2. Paste the following into your `settings.json`...
 
 ```jsonc
 // settings.json
@@ -48,7 +63,7 @@ Paste the following into your `settings.json` and set VSCode theme to [Dracula](
 
   "workbench.colorCustomizations": {
     "[Dracula]": {
-      // https://github.com/ashrafhadden/dracula-flat#settingsjson
+      // https://github.com/ashrafhadden/dracula.min#settingsjson
       "breadcrumb.background": "#282a36",
       "editor.background": "#282a36",
       "editorGroupHeader.tabsBackground": "#282a36",
@@ -69,14 +84,15 @@ Paste the following into your `settings.json` and set VSCode theme to [Dracula](
       "titleBar.inactiveBackground": "#282a36"
     }
   },
-}
+
+//...
 ```
 
 ## Light Theme Methodology
 
 When I first attempted to create a Dracula Light theme I simply switched the background [`#282a36`](https://github.com/dracula/dracula-theme#color-palette) and foreground [`#f8f8f2`](https://github.com/dracula/dracula-theme#color-palette) colors to see what would hapen.
 
-![Dracula Flat Light (no contrast adjust) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/dracula-flat-light_no_contrast_adjust.png)
+![Dracula.min Light (no contrast adjust) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min-light_no_contrast_adjust.png)
 
 As it turns out, most dark theme colors only work for dark themes 🤷‍♂️ When you only switch the background and foreground, the syntax hightlighting colors
 are often left with very poor contrast. In the screenshot above, Yellow is nearly invisible.
@@ -89,7 +105,7 @@ Thanks to the powerful color manipulation library [Chroma.js](https://github.com
 currentColor = chroma(currentColor).darken(1.5);
 ```
 
-![Dracula Flat (darken equally) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula-flat/master/screenshots/dracula-flat_darken_equally.png)
+![Dracula.min (darken equally) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min_darken_equally.png)
 
 However as you can see, darkening all the syntax colors equally doesn't quite cut it. The yellows are still a bit too light and the file explorer selection highlight on the left is difficult to see. Darkening each color manually and checking by eye seemed like hard work 👀, so being the lazy programmer that I am, I decided to try and automate it!
 
@@ -107,7 +123,7 @@ while (chroma.contrast(currentColor, foregroundColor) < 4.5) {
 
 > While the contrast ratio between `currentColor` and `foregroundColor` is less than 4.5, darken the `currentColor` by 0.1%
 
-Which results in [Dracula Flat Light](#Dracula-Flat-Light).
+Which results in [Dracula.min Light](#dracula.min-Light).
 
 ### Light Theme Darker
 
@@ -119,7 +135,7 @@ while (chroma.contrast(currentColor, foregroundColor) < 7) {
 }
 ```
 
-Which results in [Dracula Flat Light Darker](#Dracula-Flat-Light-Darker).
+Which results in [Dracula.min Light Darker](#dracula.min-Light-Darker).
 This provides an even darker color syntax for those who prefer it.
 
 ## Learn more about WCAG
@@ -131,11 +147,14 @@ This provides an even darker color syntax for those who prefer it.
     -   [How To Avoid Equidistant HSV Colors](https://www.vis4.net/blog/2011/12/avoid-equidistant-hsv-colors/)
     -   [Mastering Multi-hued Color Scales with Chroma.js](https://www.vis4.net/blog/2013/09/mastering-multi-hued-color-scales/)
 
+## Roadmap
+- Settings to control which themes are visible and registered (declutter themepicker menu)
+
 ## Special thanks to...
 
--   ![Derek Sifford](https://github.com/dsifford.png?size=16) [Derek Sifford](https://github.com/dsifford) for [dracula/visual-studio-code](https://github.com/dracula/visual-studio-code) which I forked from and his auto-magical build process
+-   ![Derek Sifford](https://github.com/dsifford.png?size=16) [Derek Sifford](https://github.com/dsifford) for [dracula/visual-studio-code](https://github.com/dracula/visual-studio-code) and his auto-magical build process
 -   ![Gregor Aisch](https://github.com/gka.png?size=16) [Gregor Aisch](https://github.com/gka) and his passion for colors that led to [Chroma.js](https://vis4.net/chromajs/)
 
 ## Feedback
 
-Let me know what you think! Feel free to open issues and PR's over at https://github.com/ashrafhadden/dracula-flat
+Let me know what you think! Feel free to open issues and PR's over at https://github.com/ashrafhadden/dracula.min

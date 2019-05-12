@@ -5,4 +5,3 @@ bin
 *.vsix
 _ttd_log_
 contrastReport*.js
-README.html # genereated sometimes by a MD extension bug
