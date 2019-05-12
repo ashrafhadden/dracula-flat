@@ -1,7 +1,7 @@
 {
   "name": "dracula-flat",
   "version": "1.3.0",
-  "description": "Dracula theme with a haircut ✂️",
+  "description": "[DEPRECATED: Renamed to dracula.min]",
   "keywords": [
     "dracula",
     "flat-design",
@@ -74,7 +74,7 @@
       }
     ]
   },
-  "displayName": "Dracula Flat",
+  "displayName": "Dracula Flat [DEPRECATED]",
   "galleryBanner": {
     "color": "#282A36",
     "theme": "dark"

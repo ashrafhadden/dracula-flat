@@ -1,3 +1,14 @@
+# DEPRECATED
+⚠️ Dracula Flat has been **renamed** to [Dracula.min](https://marketplace.visualstudio.com/items?itemName=ashrafhadden.dracula-dot-min) ⚠️
+
+❗️ Please **uninstall** this extension and install its successor: [Dracula.min](https://marketplace.visualstudio.com/items?itemName=ashrafhadden.dracula-dot-min)
+
+## Why?
+
+I created Dracula Flat with the intention for it to be a solid, 1-color-everywhere, no-borders version of Dracula. The term "Flat" accurately describes my no borders or 3D-emphasizing elements, but it leaves out the fact that its only 1-color. Looking up other "Flat" themes on the marketplace I quickly discovered that all of them still have multiple colors, they just flatten out the 3D elements. Because I'm petty and a perfectionist, I couldn't let this be xD.
+
+Unfortunately there's no way to rename an already published extension (so that it's URL and publisher ID are also changed). So I've republished under the new name [Dracula.min](https://marketplace.visualstudio.com/items?itemName=ashrafhadden.dracula-dot-min), to better encompass the spirit of this theme, Minimalism.
+
 # [Flat](https://en.wikipedia.org/wiki/Flat_design)-style [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) theme for [VSCode](http://code.visualstudio.com)
 > What is Flat design?
 > - [Wikipedia](https://en.wikipedia.org/wiki/Flat_design)
