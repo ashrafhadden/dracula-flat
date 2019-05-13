@@ -7,7 +7,7 @@ TODO
 # Dracula.min
 _[Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) minified 📦 Less GUI, more code._
 
-Minimal 🌙 Light and 🔆 Dark themes for [VSCode](https://code.visualstudio.com)
+Minimal 🌙 Dark & 🔆 Light themes for [VSCode](https://code.visualstudio.com)
 
 -  Minimal
 -  Flat
