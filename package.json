@@ -1,6 +1,6 @@
 {
   "name": "dracula-dot-min",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Dracula minified 📦 Less GUI, more code — Minimal 🌙 Dark & 🔆Light themes",
   "keywords": [
     "dracula",
@@ -35,7 +35,7 @@
   "scripts": {
     "build": "node ./scripts/build.js",
     "lint": "node ./scripts/lint.js",
-    "start": "npm run build && vsce package && code --install-extension ${npm_package_name}-${npm_version}.vsix",
+    "start": "vsce package && code --install-extension ${npm_package_name}-${npm_package_version}.vsix",
     "test": "node ./scripts/test.js",
     "vscode:prepublish": "npm update && npm run build && npm audit"
   },
