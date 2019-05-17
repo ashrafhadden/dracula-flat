@@ -88,10 +88,9 @@ For those who prefer [tweaking themes via `settings.json`](https://code.visualst
       "titleBar.activeBackground": "#282a36",
       "titleBar.inactiveBackground": "#282a36"
     }
-  },
-
-//...
+  }
 ```
+
 
 ## Light Theme Methodology
 
