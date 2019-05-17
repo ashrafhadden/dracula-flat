@@ -60,27 +60,27 @@
       {
         "label": "Dracula.min",
         "uiTheme": "vs-dark",
-        "path": "./themes/dracula.min.json"
+        "path": "./themes/dracula-dot-min.json"
       },
       {
         "label": "Dracula.min Light",
         "uiTheme": "vs",
-        "path": "./themes/dracula.min-light.json"
+        "path": "./themes/dracula-dot-min-light.json"
       },
       {
         "label": "Dracula.min Light Darker",
         "uiTheme": "vs",
-        "path": "./themes/dracula.min-light-darker.json"
+        "path": "./themes/dracula-dot-min-light-darker.json"
       },
       {
         "label": "Dracula.min White",
         "uiTheme": "vs",
-        "path": "./themes/dracula.min-white.json"
+        "path": "./themes/dracula-dot-min-white.json"
       },
       {
         "label": "Dracula.min White Darker",
         "uiTheme": "vs",
-        "path": "./themes/dracula.min-white-darker.json"
+        "path": "./themes/dracula-dot-min-white-darker.json"
       }
     ]
   },

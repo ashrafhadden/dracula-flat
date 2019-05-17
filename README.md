@@ -16,29 +16,29 @@ Dracula.min is a minimal version of [Dracula Official](https://marketplace.visua
 
 ### Dracula.min 
 
-![Dracula.min Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min.png)
+![Dracula.min Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula-dot-min.png)
 
 ### Dracula.min Light
 
-![Dracula.min Light Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min-light.png)
+![Dracula.min Light Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula-dot-min-light.png)
 
 ### Dracula.min Light Darker
 
-![Dracula.min Light Darker Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min-light-darker.png)
+![Dracula.min Light Darker Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula-dot-min-light-darker.png)
 
 ### Dracula.min White
 
-![Dracula.min White Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min-white.png)
+![Dracula.min White Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula-dot-min-white.png)
 
 ### Dracula.min White Darker
 
-![Dracula.min White Darker Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min-white-darker.png)
+![Dracula.min White Darker Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula-dot-min-white-darker.png)
 
 ## Install
 
 ### Marketplace
 
-Go to this theme's VSCode Marketplace [extension page](https://marketplace.visualstudio.com/items?itemName=ashrafhadden.dracula-min) and click `install`
+Go to this theme's VSCode Marketplace [extension page](https://marketplace.visualstudio.com/items?itemName=ashrafhadden.dracula-dot-min) and click `install`
 
 ### Quick Open <kbd>⌘</kbd> <kbd>P</kbd>
 
@@ -96,7 +96,7 @@ For those who prefer [tweaking themes via `settings.json`](https://code.visualst
 
 When I first attempted to create a Dracula Light theme I simply switched the background [`#282a36`](https://github.com/dracula/dracula-theme#color-palette) and foreground [`#f8f8f2`](https://github.com/dracula/dracula-theme#color-palette) colors to see what would hapen.
 
-![Dracula.min Light (no contrast adjust) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min-light_no_contrast_adjust.png)
+![Dracula.min Light (no contrast adjust) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula-dot-min-light_no_contrast_adjust.png)
 
 As it turns out, most dark theme colors only work for dark themes 🤷‍♂️ When you only switch the background and foreground, the syntax hightlighting colors
 are often left with very poor contrast. In the screenshot above, Yellow is nearly invisible.
@@ -109,7 +109,7 @@ Thanks to the powerful color manipulation library [Chroma.js](https://github.com
 currentColor = chroma(currentColor).darken(1.5);
 ```
 
-![Dracula.min (darken equally) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min_darken_equally.png)
+![Dracula.min (darken equally) Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula-dot-min_darken_equally.png)
 
 However as you can see, darkening all the syntax colors equally doesn't quite cut it. The yellows are still a bit too light and the file explorer selection highlight on the left is difficult to see. Darkening each color manually and checking by eye seemed like hard work 👀, so being the lazy programmer that I am, I decided to try and automate it!
 
