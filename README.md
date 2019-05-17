@@ -1,6 +1,5 @@
 <!-- 
 TODO 
-• Add White theme Screenshots 
 • Add ## Colors used section
 -->
 
@@ -9,43 +8,48 @@ _[Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.the
 
 Minimal 🌙 Dark & 🔆 Light themes for [VSCode](https://code.visualstudio.com)
 
--  Minimal
--  Flat
--  Borderless
--  All-one-color
+- Flat
+- Borderless
+- All-one-color
 
 Dracula.min is a minimal version of [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) for [VSCode](https://code.visualstudio.com/). I was inspired by the beautiful seamless style of [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme) which I fell in love with for its immersive feeling and distraction-free UI.
 
-## Dracula.min
+### Dracula.min 
 
 ![Dracula.min Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min.png)
 
-## Dracula.min Light
+### Dracula.min Light
 
 ![Dracula.min Light Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min-light.png)
 
-## Dracula.min Light Darker
-
-> Same as Dracula.min Light but with slightly darker syntax highlighting colors
+### Dracula.min Light Darker
 
 ![Dracula.min Light Darker Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min-light-darker.png)
+
+### Dracula.min White
+
+![Dracula.min White Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min-white.png)
+
+### Dracula.min White Darker
+
+![Dracula.min White Darker Screenshot](https://raw.githubusercontent.com/ashrafhadden/dracula.min/master/screenshots/dracula.min-white-darker.png)
 
 ## Install
 
 ### Marketplace
 
-Go to this theme's VSCode Marketplace [extension page](https://marketplace.visualstudio.com/items?itemName=ashrafhadden.dracula-dot-min) and click `install`
+Go to this theme's VSCode Marketplace [extension page](https://marketplace.visualstudio.com/items?itemName=ashrafhadden.dracula-min) and click `install`
 
 ### Quick Open <kbd>⌘</kbd> <kbd>P</kbd>
 
 ```
-ext install ashrafhadden.dracula.min
+ext install ashrafhadden.dracula-dot-min
 ```
 
 ### Command Line
 
 ```bash
-code --install-extension ashrafhadden.dracula.min
+code --install-extension ashrafhadden.dracula-dot-min
 ```
 
 ### settings.json
@@ -63,6 +67,7 @@ For those who prefer [tweaking themes via `settings.json`](https://code.visualst
 
   "workbench.colorCustomizations": {
     "[Dracula]": {
+      // Dracula.min
       // https://github.com/ashrafhadden/dracula.min#settingsjson
       "breadcrumb.background": "#282a36",
       "editor.background": "#282a36",

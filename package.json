@@ -1,11 +1,17 @@
 {
   "name": "dracula-dot-min",
   "version": "2.0.3",
-  "description": "Dracula minified 📦 Less GUI, more code — Minimal 🌙 Dark & 🔆 Light themes",
+  "description": "Dracula minified 📦 Less GUI, more code — Minimal 🌙Dark & 🔆Light themes",
   "keywords": [
+    "dracula.min",
     "dracula",
-    "flat-design",
-    "vscode-theme"
+    "minimal",
+    "borderless",
+    "seamless",
+    "no-borders",
+    "no borders",
+    "solid",
+    "flat"
   ],
   "homepage": "https://github.com/ashrafhadden/dracula.min",
   "bugs": {
@@ -37,12 +43,7 @@
     "lint": "node ./scripts/lint.js",
     "start": "vsce package && code --install-extension ${npm_package_name}-${npm_package_version}.vsix",
     "test": "node ./scripts/test.js",
-    "vscode:prepublish": "npm update && npm run build && npm audit"
-  },
-  "config": {
-    "light": "Dracula.min Light",
-    "light-darker": "Dracula.min Light Darker",
-    "standard": "Dracula.min"
+    "vscode:prepublish": "npm update && npm run build"
   },
   "devDependencies": {
     "chroma-js": "^2.0.3",
