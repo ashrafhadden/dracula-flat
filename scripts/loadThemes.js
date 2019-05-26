@@ -1,14 +1,14 @@
 const { inspect } = require('util')
 const { loadJSON } = require('./yaml')
 const chroma = require('chroma-js')
-const fsp = require('./fsp')
+const fs = require('fs')
 
 /**
  * On dev mode, sometimes when we read the file the return value of readFile
  * is an empty string. In those cases we need to read the file again
  */
 async function readFileRetrying(filePathYAML) {
-  const yaml = await fsp.readFile(filePathYAML, 'utf8')
+  const yaml = await fs.readFileSync(filePathYAML, 'utf8')
   if (!yaml) {
     return readFileRetrying(filePathYAML)
   }
@@ -113,7 +113,7 @@ function getVariant(yaml, json, variant) {
     variant: variantDisplayName,
     contrastRatioTarget: ratioTargetMap[variant],
   })
-  fsp.writeFile(`contrastReport-${variant}.js`, inspect(contrastReport))
+  fs.writeFile(`contrastReport-${variant}.js`, inspect(contrastReport), err => {if (err) throw err})
 
   return yamlVariant.replace('Dracula.min Theme', `Dracula.min ${variantDisplayName} Theme`)
 }

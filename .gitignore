@@ -4,4 +4,4 @@ src/tests
 bin
 *.vsix
 _ttd_log_
-contrastReport*.js
+colors-used-table*.md
