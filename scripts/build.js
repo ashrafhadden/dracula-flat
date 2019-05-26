@@ -1,7 +1,7 @@
 'use strict'
 
 const path = require('path')
-const fsp = require('./fsp')
+const fs = require('fs')
 const loadThemes = require('./loadThemes')
 
 const THEME_DIR = path.join(__dirname, '..', 'themes')
@@ -12,8 +12,8 @@ function toJSON(theme) {
 }
 
 async function build() {
-  if (!(await fsp.exists(THEME_DIR))) {
-    await fsp.mkdir(THEME_DIR)
+  if (!(await fs.existsSync(THEME_DIR))) {
+    await fs.mkdir(THEME_DIR, err => {if (err) throw err})
   }
 
   const extensionName = process.env.npm_package_name
@@ -25,11 +25,11 @@ async function build() {
   const themePath_whiteDarker = path.join(THEME_DIR, `${extensionName}-white-darker.json`)
 
   await Promise.all([
-    fsp.writeFile(themePath, toJSON(json)),
-    fsp.writeFile(themePath_light, toJSON(json_light)),
-    fsp.writeFile(themePath_lightDarker, toJSON(json_lightDarker)),
-    fsp.writeFile(themePath_white, toJSON(json_white)),
-    fsp.writeFile(themePath_whiteDarker, toJSON(json_whiteDarker)),
+    fs.writeFile(themePath, toJSON(json), err => {if (err) throw err}),
+    fs.writeFile(themePath_light, toJSON(json_light), err => {if (err) throw err}),
+    fs.writeFile(themePath_lightDarker, toJSON(json_lightDarker), err => {if (err) throw err}),
+    fs.writeFile(themePath_white, toJSON(json_white), err => {if (err) throw err}),
+    fs.writeFile(themePath_whiteDarker, toJSON(json_whiteDarker), err => {if (err) throw err}),
   ])
 }
 
