@@ -63,7 +63,7 @@ function getVariant(yaml, json, variant) {
   .split('-')
   .map(s => s.charAt(0).toUpperCase() + s.substring(1))
     .join(' ')
-  const background = `${variant.includes('light') ? '#282a36': '#ffffff' }`
+  const background = `${variant.includes('light') ? '#282a36' : '#ffffff'}`
   let MDTable = `\
 ### ${variantDisplayName}
 
@@ -108,12 +108,15 @@ function getVariant(yaml, json, variant) {
       }
 
       const darkenedColor = chroma(color).hex()
+      const darkenedColor_noHex = darkenedColor.substring(1)
       const name = colorTypeMap[originalColor]
       const ratioToBackground = Math.round(chroma.contrast(darkenedColor, FG) * 10) / 10
       // const ratioToBackground = chroma.contrast(darkenedColor, FG).toFixed(1)
       // const ratioToBackground = chroma.contrast(darkenedColor, FG)
       const difference = `${Math.round(chroma.deltaE(originalColor, darkenedColor)) * 10}%`
-      MDTable += `\n| ${name} | <div style="color:${originalColor.toLowerCase()}; font-size:1.618em">■</div> | ${originalColor.toLowerCase()} | <div style="color:${darkenedColor}; font-size:1.618em">■</div> | ${darkenedColor} | ${ratioToBackground} | ${difference} |`
+      const originalColorLC = originalColor.toLowerCase()
+      const originalColorLC_noHex = originalColorLC.substring(1)
+      MDTable += `\n| ${name} | ![${originalColorLC}](https://placehold.it/15/${originalColorLC_noHex}/000000?text=+) | ${originalColorLC} | ![${darkenedColor}](https://placehold.it/15/${darkenedColor_noHex}/000000?text=+) | ${darkenedColor} | ${ratioToBackground} | ${difference} |`
 
       return color
     }

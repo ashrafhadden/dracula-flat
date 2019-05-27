@@ -92,133 +92,133 @@ For those who prefer [tweaking themes via `settings.json`](https://code.visualst
 
 | Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (#282a36) | Difference   |
 |------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|--------------|
-| COLOR8 | <div style="color:#6272a4; font-size:1.618em">■</div> | #6272a4 | <div style="color:#6171a3; font-size:1.618em">■</div> | #6171a3 | 4.5 | 0% |
-| COLOR6 | <div style="color:#8be9fd; font-size:1.618em">■</div> | #8be9fd | <div style="color:#007e90; font-size:1.618em">■</div> | #007e90 | 4.5 | 280% |
-| COLOR2 | <div style="color:#50fa7b; font-size:1.618em">■</div> | #50fa7b | <div style="color:#008504; font-size:1.618em">■</div> | #008504 | 4.5 | 290% |
-| ORANGE | <div style="color:#ffb86c; font-size:1.618em">■</div> | #ffb86c | <div style="color:#a0651b; font-size:1.618em">■</div> | #a0651b | 4.5 | 230% |
-| COLOR5 | <div style="color:#ff79c6; font-size:1.618em">■</div> | #ff79c6 | <div style="color:#c13f8e; font-size:1.618em">■</div> | #c13f8e | 4.5 | 160% |
-| COLOR4 | <div style="color:#bd93f9; font-size:1.618em">■</div> | #bd93f9 | <div style="color:#855fbf; font-size:1.618em">■</div> | #855fbf | 4.5 | 160% |
-| COLOR1 | <div style="color:#ff5555; font-size:1.618em">■</div> | #ff5555 | <div style="color:#d82f39; font-size:1.618em">■</div> | #d82f39 | 4.5 | 100% |
-| COLOR3 | <div style="color:#f1fa8c; font-size:1.618em">■</div> | #f1fa8c | <div style="color:#6c7908; font-size:1.618em">■</div> | #6c7908 | 4.5 | 330% |
-| COLOR0 | <div style="color:#21222c; font-size:1.618em">■</div> | #21222c | <div style="color:#21222c; font-size:1.618em">■</div> | #21222c | 14.8 | 0% |
-| COLOR1 | <div style="color:#ff5555; font-size:1.618em">■</div> | #ff5555 | <div style="color:#d82f39; font-size:1.618em">■</div> | #d82f39 | 4.5 | 100% |
-| COLOR2 | <div style="color:#50fa7b; font-size:1.618em">■</div> | #50fa7b | <div style="color:#008504; font-size:1.618em">■</div> | #008504 | 4.5 | 290% |
-| COLOR3 | <div style="color:#f1fa8c; font-size:1.618em">■</div> | #f1fa8c | <div style="color:#6c7908; font-size:1.618em">■</div> | #6c7908 | 4.5 | 330% |
-| COLOR4 | <div style="color:#bd93f9; font-size:1.618em">■</div> | #bd93f9 | <div style="color:#855fbf; font-size:1.618em">■</div> | #855fbf | 4.5 | 160% |
-| COLOR5 | <div style="color:#ff79c6; font-size:1.618em">■</div> | #ff79c6 | <div style="color:#c13f8e; font-size:1.618em">■</div> | #c13f8e | 4.5 | 160% |
-| COLOR6 | <div style="color:#8be9fd; font-size:1.618em">■</div> | #8be9fd | <div style="color:#007e90; font-size:1.618em">■</div> | #007e90 | 4.5 | 280% |
-| COLOR8 | <div style="color:#6272a4; font-size:1.618em">■</div> | #6272a4 | <div style="color:#6171a3; font-size:1.618em">■</div> | #6171a3 | 4.5 | 0% |
-| COLOR9 | <div style="color:#ff6e6e; font-size:1.618em">■</div> | #ff6e6e | <div style="color:#cb4046; font-size:1.618em">■</div> | #cb4046 | 4.5 | 130% |
-| COLOR10 | <div style="color:#69ff94; font-size:1.618em">■</div> | #69ff94 | <div style="color:#008525; font-size:1.618em">■</div> | #008525 | 4.5 | 300% |
-| COLOR11 | <div style="color:#ffffa5; font-size:1.618em">■</div> | #ffffa5 | <div style="color:#727724; font-size:1.618em">■</div> | #727724 | 4.5 | 340% |
-| COLOR12 | <div style="color:#d6acff; font-size:1.618em">■</div> | #d6acff | <div style="color:#8762ae; font-size:1.618em">■</div> | #8762ae | 4.5 | 210% |
-| COLOR13 | <div style="color:#ff92df; font-size:1.618em">■</div> | #ff92df | <div style="color:#b34b97; font-size:1.618em">■</div> | #b34b97 | 4.5 | 200% |
-| COLOR14 | <div style="color:#a4ffff; font-size:1.618em">■</div> | #a4ffff | <div style="color:#157f80; font-size:1.618em">■</div> | #157f80 | 4.5 | 320% |
-| WHITE | <div style="color:#ffffff; font-size:1.618em">■</div> | #ffffff | <div style="color:#727272; font-size:1.618em">■</div> | #727272 | 4.5 | 350% |
-| TEMP_QUOTES | <div style="color:#e9f284; font-size:1.618em">■</div> | #e9f284 | <div style="color:#6c7907; font-size:1.618em">■</div> | #6c7907 | 4.5 | 310% |
-| TEMP_PROPERTY_QUOTES | <div style="color:#8be9fe; font-size:1.618em">■</div> | #8be9fe | <div style="color:#007e91; font-size:1.618em">■</div> | #007e91 | 4.5 | 280% |
-| LineHighlight | <div style="color:#44475a75; font-size:1.618em">■</div> | #44475a75 | <div style="color:#44475a75; font-size:1.618em">■</div> | #44475a75 | 8.6 | 0% |
-| WHITE | <div style="color:#ffffff; font-size:1.618em">■</div> | #ffffff | <div style="color:#727272; font-size:1.618em">■</div> | #727272 | 4.5 | 350% |
-| TAB_DROP_BG | <div style="color:#44475a70; font-size:1.618em">■</div> | #44475a70 | <div style="color:#44475a70; font-size:1.618em">■</div> | #44475a70 | 8.6 | 0% |
+| COLOR8 | ![#6272a4](https://placehold.it/15/6272a4/000000?text=+) | #6272a4 | ![#6171a3](https://placehold.it/15/6171a3/000000?text=+) | #6171a3 | 4.5 | 0% |
+| COLOR6 | ![#8be9fd](https://placehold.it/15/8be9fd/000000?text=+) | #8be9fd | ![#007e90](https://placehold.it/15/007e90/000000?text=+) | #007e90 | 4.5 | 280% |
+| COLOR2 | ![#50fa7b](https://placehold.it/15/50fa7b/000000?text=+) | #50fa7b | ![#008504](https://placehold.it/15/008504/000000?text=+) | #008504 | 4.5 | 290% |
+| ORANGE | ![#ffb86c](https://placehold.it/15/ffb86c/000000?text=+) | #ffb86c | ![#a0651b](https://placehold.it/15/a0651b/000000?text=+) | #a0651b | 4.5 | 230% |
+| COLOR5 | ![#ff79c6](https://placehold.it/15/ff79c6/000000?text=+) | #ff79c6 | ![#c13f8e](https://placehold.it/15/c13f8e/000000?text=+) | #c13f8e | 4.5 | 160% |
+| COLOR4 | ![#bd93f9](https://placehold.it/15/bd93f9/000000?text=+) | #bd93f9 | ![#855fbf](https://placehold.it/15/855fbf/000000?text=+) | #855fbf | 4.5 | 160% |
+| COLOR1 | ![#ff5555](https://placehold.it/15/ff5555/000000?text=+) | #ff5555 | ![#d82f39](https://placehold.it/15/d82f39/000000?text=+) | #d82f39 | 4.5 | 100% |
+| COLOR3 | ![#f1fa8c](https://placehold.it/15/f1fa8c/000000?text=+) | #f1fa8c | ![#6c7908](https://placehold.it/15/6c7908/000000?text=+) | #6c7908 | 4.5 | 330% |
+| COLOR0 | ![#21222c](https://placehold.it/15/21222c/000000?text=+) | #21222c | ![#21222c](https://placehold.it/15/21222c/000000?text=+) | #21222c | 14.8 | 0% |
+| COLOR1 | ![#ff5555](https://placehold.it/15/ff5555/000000?text=+) | #ff5555 | ![#d82f39](https://placehold.it/15/d82f39/000000?text=+) | #d82f39 | 4.5 | 100% |
+| COLOR2 | ![#50fa7b](https://placehold.it/15/50fa7b/000000?text=+) | #50fa7b | ![#008504](https://placehold.it/15/008504/000000?text=+) | #008504 | 4.5 | 290% |
+| COLOR3 | ![#f1fa8c](https://placehold.it/15/f1fa8c/000000?text=+) | #f1fa8c | ![#6c7908](https://placehold.it/15/6c7908/000000?text=+) | #6c7908 | 4.5 | 330% |
+| COLOR4 | ![#bd93f9](https://placehold.it/15/bd93f9/000000?text=+) | #bd93f9 | ![#855fbf](https://placehold.it/15/855fbf/000000?text=+) | #855fbf | 4.5 | 160% |
+| COLOR5 | ![#ff79c6](https://placehold.it/15/ff79c6/000000?text=+) | #ff79c6 | ![#c13f8e](https://placehold.it/15/c13f8e/000000?text=+) | #c13f8e | 4.5 | 160% |
+| COLOR6 | ![#8be9fd](https://placehold.it/15/8be9fd/000000?text=+) | #8be9fd | ![#007e90](https://placehold.it/15/007e90/000000?text=+) | #007e90 | 4.5 | 280% |
+| COLOR8 | ![#6272a4](https://placehold.it/15/6272a4/000000?text=+) | #6272a4 | ![#6171a3](https://placehold.it/15/6171a3/000000?text=+) | #6171a3 | 4.5 | 0% |
+| COLOR9 | ![#ff6e6e](https://placehold.it/15/ff6e6e/000000?text=+) | #ff6e6e | ![#cb4046](https://placehold.it/15/cb4046/000000?text=+) | #cb4046 | 4.5 | 130% |
+| COLOR10 | ![#69ff94](https://placehold.it/15/69ff94/000000?text=+) | #69ff94 | ![#008525](https://placehold.it/15/008525/000000?text=+) | #008525 | 4.5 | 300% |
+| COLOR11 | ![#ffffa5](https://placehold.it/15/ffffa5/000000?text=+) | #ffffa5 | ![#727724](https://placehold.it/15/727724/000000?text=+) | #727724 | 4.5 | 340% |
+| COLOR12 | ![#d6acff](https://placehold.it/15/d6acff/000000?text=+) | #d6acff | ![#8762ae](https://placehold.it/15/8762ae/000000?text=+) | #8762ae | 4.5 | 210% |
+| COLOR13 | ![#ff92df](https://placehold.it/15/ff92df/000000?text=+) | #ff92df | ![#b34b97](https://placehold.it/15/b34b97/000000?text=+) | #b34b97 | 4.5 | 200% |
+| COLOR14 | ![#a4ffff](https://placehold.it/15/a4ffff/000000?text=+) | #a4ffff | ![#157f80](https://placehold.it/15/157f80/000000?text=+) | #157f80 | 4.5 | 320% |
+| WHITE | ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) | #ffffff | ![#727272](https://placehold.it/15/727272/000000?text=+) | #727272 | 4.5 | 350% |
+| TEMP_QUOTES | ![#e9f284](https://placehold.it/15/e9f284/000000?text=+) | #e9f284 | ![#6c7907](https://placehold.it/15/6c7907/000000?text=+) | #6c7907 | 4.5 | 310% |
+| TEMP_PROPERTY_QUOTES | ![#8be9fe](https://placehold.it/15/8be9fe/000000?text=+) | #8be9fe | ![#007e91](https://placehold.it/15/007e91/000000?text=+) | #007e91 | 4.5 | 280% |
+| LineHighlight | ![#44475a75](https://placehold.it/15/44475a75/000000?text=+) | #44475a75 | ![#44475a75](https://placehold.it/15/44475a75/000000?text=+) | #44475a75 | 8.6 | 0% |
+| WHITE | ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) | #ffffff | ![#727272](https://placehold.it/15/727272/000000?text=+) | #727272 | 4.5 | 350% |
+| TAB_DROP_BG | ![#44475a70](https://placehold.it/15/44475a70/000000?text=+) | #44475a70 | ![#44475a70](https://placehold.it/15/44475a70/000000?text=+) | #44475a70 | 8.6 | 0% |
 
 ### Light Darker
 
 | Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (#282a36) | Difference   |
 |------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|--------------|
-| COLOR8 | <div style="color:#6272a4; font-size:1.618em">■</div> | #6272a4 | <div style="color:#425483; font-size:1.618em">■</div> | #425483 | 7 | 120% |
-| COLOR6 | <div style="color:#8be9fd; font-size:1.618em">■</div> | #8be9fd | <div style="color:#005d6f; font-size:1.618em">■</div> | #005d6f | 7 | 370% |
-| COLOR2 | <div style="color:#50fa7b; font-size:1.618em">■</div> | #50fa7b | <div style="color:#006400; font-size:1.618em">■</div> | #006400 | 7 | 380% |
-| ORANGE | <div style="color:#ffb86c; font-size:1.618em">■</div> | #ffb86c | <div style="color:#7d4800; font-size:1.618em">■</div> | #7d4800 | 7 | 320% |
-| COLOR5 | <div style="color:#ff79c6; font-size:1.618em">■</div> | #ff79c6 | <div style="color:#9f1670; font-size:1.618em">■</div> | #9f1670 | 7 | 260% |
-| COLOR4 | <div style="color:#bd93f9; font-size:1.618em">■</div> | #bd93f9 | <div style="color:#64429e; font-size:1.618em">■</div> | #64429e | 7 | 250% |
-| COLOR1 | <div style="color:#ff5555; font-size:1.618em">■</div> | #ff5555 | <div style="color:#ae001c; font-size:1.618em">■</div> | #ae001c | 7 | 200% |
-| COLOR3 | <div style="color:#f1fa8c; font-size:1.618em">■</div> | #f1fa8c | <div style="color:#4c5b00; font-size:1.618em">■</div> | #4c5b00 | 7 | 410% |
-| COLOR0 | <div style="color:#21222c; font-size:1.618em">■</div> | #21222c | <div style="color:#21222c; font-size:1.618em">■</div> | #21222c | 14.8 | 0% |
-| COLOR1 | <div style="color:#ff5555; font-size:1.618em">■</div> | #ff5555 | <div style="color:#ae001c; font-size:1.618em">■</div> | #ae001c | 7 | 200% |
-| COLOR2 | <div style="color:#50fa7b; font-size:1.618em">■</div> | #50fa7b | <div style="color:#006400; font-size:1.618em">■</div> | #006400 | 7 | 380% |
-| COLOR3 | <div style="color:#f1fa8c; font-size:1.618em">■</div> | #f1fa8c | <div style="color:#4c5b00; font-size:1.618em">■</div> | #4c5b00 | 7 | 410% |
-| COLOR4 | <div style="color:#bd93f9; font-size:1.618em">■</div> | #bd93f9 | <div style="color:#64429e; font-size:1.618em">■</div> | #64429e | 7 | 250% |
-| COLOR5 | <div style="color:#ff79c6; font-size:1.618em">■</div> | #ff79c6 | <div style="color:#9f1670; font-size:1.618em">■</div> | #9f1670 | 7 | 260% |
-| COLOR6 | <div style="color:#8be9fd; font-size:1.618em">■</div> | #8be9fd | <div style="color:#005d6f; font-size:1.618em">■</div> | #005d6f | 7 | 370% |
-| COLOR8 | <div style="color:#6272a4; font-size:1.618em">■</div> | #6272a4 | <div style="color:#425483; font-size:1.618em">■</div> | #425483 | 7 | 120% |
-| COLOR9 | <div style="color:#ff6e6e; font-size:1.618em">■</div> | #ff6e6e | <div style="color:#a7192c; font-size:1.618em">■</div> | #a7192c | 7 | 230% |
-| COLOR10 | <div style="color:#69ff94; font-size:1.618em">■</div> | #69ff94 | <div style="color:#006400; font-size:1.618em">■</div> | #006400 | 7 | 390% |
-| COLOR11 | <div style="color:#ffffa5; font-size:1.618em">■</div> | #ffffa5 | <div style="color:#535901; font-size:1.618em">■</div> | #535901 | 7 | 420% |
-| COLOR12 | <div style="color:#d6acff; font-size:1.618em">■</div> | #d6acff | <div style="color:#68448e; font-size:1.618em">■</div> | #68448e | 7 | 300% |
-| COLOR13 | <div style="color:#ff92df; font-size:1.618em">■</div> | #ff92df | <div style="color:#912a78; font-size:1.618em">■</div> | #912a78 | 7 | 290% |
-| COLOR14 | <div style="color:#a4ffff; font-size:1.618em">■</div> | #a4ffff | <div style="color:#005f60; font-size:1.618em">■</div> | #005f60 | 7 | 400% |
-| WHITE | <div style="color:#ffffff; font-size:1.618em">■</div> | #ffffff | <div style="color:#555555; font-size:1.618em">■</div> | #555555 | 7 | 430% |
-| TEMP_QUOTES | <div style="color:#e9f284; font-size:1.618em">■</div> | #e9f284 | <div style="color:#4c5b00; font-size:1.618em">■</div> | #4c5b00 | 7 | 400% |
-| TEMP_PROPERTY_QUOTES | <div style="color:#8be9fe; font-size:1.618em">■</div> | #8be9fe | <div style="color:#005d70; font-size:1.618em">■</div> | #005d70 | 7 | 370% |
-| LineHighlight | <div style="color:#44475a75; font-size:1.618em">■</div> | #44475a75 | <div style="color:#44475a75; font-size:1.618em">■</div> | #44475a75 | 8.6 | 0% |
-| WHITE | <div style="color:#ffffff; font-size:1.618em">■</div> | #ffffff | <div style="color:#555555; font-size:1.618em">■</div> | #555555 | 7 | 430% |
-| TAB_DROP_BG | <div style="color:#44475a70; font-size:1.618em">■</div> | #44475a70 | <div style="color:#44475a70; font-size:1.618em">■</div> | #44475a70 | 8.6 | 0% |
+| COLOR8 | ![#6272a4](https://placehold.it/15/6272a4/000000?text=+) | #6272a4 | ![#425483](https://placehold.it/15/425483/000000?text=+) | #425483 | 7 | 120% |
+| COLOR6 | ![#8be9fd](https://placehold.it/15/8be9fd/000000?text=+) | #8be9fd | ![#005d6f](https://placehold.it/15/005d6f/000000?text=+) | #005d6f | 7 | 370% |
+| COLOR2 | ![#50fa7b](https://placehold.it/15/50fa7b/000000?text=+) | #50fa7b | ![#006400](https://placehold.it/15/006400/000000?text=+) | #006400 | 7 | 380% |
+| ORANGE | ![#ffb86c](https://placehold.it/15/ffb86c/000000?text=+) | #ffb86c | ![#7d4800](https://placehold.it/15/7d4800/000000?text=+) | #7d4800 | 7 | 320% |
+| COLOR5 | ![#ff79c6](https://placehold.it/15/ff79c6/000000?text=+) | #ff79c6 | ![#9f1670](https://placehold.it/15/9f1670/000000?text=+) | #9f1670 | 7 | 260% |
+| COLOR4 | ![#bd93f9](https://placehold.it/15/bd93f9/000000?text=+) | #bd93f9 | ![#64429e](https://placehold.it/15/64429e/000000?text=+) | #64429e | 7 | 250% |
+| COLOR1 | ![#ff5555](https://placehold.it/15/ff5555/000000?text=+) | #ff5555 | ![#ae001c](https://placehold.it/15/ae001c/000000?text=+) | #ae001c | 7 | 200% |
+| COLOR3 | ![#f1fa8c](https://placehold.it/15/f1fa8c/000000?text=+) | #f1fa8c | ![#4c5b00](https://placehold.it/15/4c5b00/000000?text=+) | #4c5b00 | 7 | 410% |
+| COLOR0 | ![#21222c](https://placehold.it/15/21222c/000000?text=+) | #21222c | ![#21222c](https://placehold.it/15/21222c/000000?text=+) | #21222c | 14.8 | 0% |
+| COLOR1 | ![#ff5555](https://placehold.it/15/ff5555/000000?text=+) | #ff5555 | ![#ae001c](https://placehold.it/15/ae001c/000000?text=+) | #ae001c | 7 | 200% |
+| COLOR2 | ![#50fa7b](https://placehold.it/15/50fa7b/000000?text=+) | #50fa7b | ![#006400](https://placehold.it/15/006400/000000?text=+) | #006400 | 7 | 380% |
+| COLOR3 | ![#f1fa8c](https://placehold.it/15/f1fa8c/000000?text=+) | #f1fa8c | ![#4c5b00](https://placehold.it/15/4c5b00/000000?text=+) | #4c5b00 | 7 | 410% |
+| COLOR4 | ![#bd93f9](https://placehold.it/15/bd93f9/000000?text=+) | #bd93f9 | ![#64429e](https://placehold.it/15/64429e/000000?text=+) | #64429e | 7 | 250% |
+| COLOR5 | ![#ff79c6](https://placehold.it/15/ff79c6/000000?text=+) | #ff79c6 | ![#9f1670](https://placehold.it/15/9f1670/000000?text=+) | #9f1670 | 7 | 260% |
+| COLOR6 | ![#8be9fd](https://placehold.it/15/8be9fd/000000?text=+) | #8be9fd | ![#005d6f](https://placehold.it/15/005d6f/000000?text=+) | #005d6f | 7 | 370% |
+| COLOR8 | ![#6272a4](https://placehold.it/15/6272a4/000000?text=+) | #6272a4 | ![#425483](https://placehold.it/15/425483/000000?text=+) | #425483 | 7 | 120% |
+| COLOR9 | ![#ff6e6e](https://placehold.it/15/ff6e6e/000000?text=+) | #ff6e6e | ![#a7192c](https://placehold.it/15/a7192c/000000?text=+) | #a7192c | 7 | 230% |
+| COLOR10 | ![#69ff94](https://placehold.it/15/69ff94/000000?text=+) | #69ff94 | ![#006400](https://placehold.it/15/006400/000000?text=+) | #006400 | 7 | 390% |
+| COLOR11 | ![#ffffa5](https://placehold.it/15/ffffa5/000000?text=+) | #ffffa5 | ![#535901](https://placehold.it/15/535901/000000?text=+) | #535901 | 7 | 420% |
+| COLOR12 | ![#d6acff](https://placehold.it/15/d6acff/000000?text=+) | #d6acff | ![#68448e](https://placehold.it/15/68448e/000000?text=+) | #68448e | 7 | 300% |
+| COLOR13 | ![#ff92df](https://placehold.it/15/ff92df/000000?text=+) | #ff92df | ![#912a78](https://placehold.it/15/912a78/000000?text=+) | #912a78 | 7 | 290% |
+| COLOR14 | ![#a4ffff](https://placehold.it/15/a4ffff/000000?text=+) | #a4ffff | ![#005f60](https://placehold.it/15/005f60/000000?text=+) | #005f60 | 7 | 400% |
+| WHITE | ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) | #ffffff | ![#555555](https://placehold.it/15/555555/000000?text=+) | #555555 | 7 | 430% |
+| TEMP_QUOTES | ![#e9f284](https://placehold.it/15/e9f284/000000?text=+) | #e9f284 | ![#4c5b00](https://placehold.it/15/4c5b00/000000?text=+) | #4c5b00 | 7 | 400% |
+| TEMP_PROPERTY_QUOTES | ![#8be9fe](https://placehold.it/15/8be9fe/000000?text=+) | #8be9fe | ![#005d70](https://placehold.it/15/005d70/000000?text=+) | #005d70 | 7 | 370% |
+| LineHighlight | ![#44475a75](https://placehold.it/15/44475a75/000000?text=+) | #44475a75 | ![#44475a75](https://placehold.it/15/44475a75/000000?text=+) | #44475a75 | 8.6 | 0% |
+| WHITE | ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) | #ffffff | ![#555555](https://placehold.it/15/555555/000000?text=+) | #555555 | 7 | 430% |
+| TAB_DROP_BG | ![#44475a70](https://placehold.it/15/44475a70/000000?text=+) | #44475a70 | ![#44475a70](https://placehold.it/15/44475a70/000000?text=+) | #44475a70 | 8.6 | 0% |
 
 ### White
 
 | Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (#ffffff) | Difference   |
 |------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|--------------|
-| COLOR8 | <div style="color:#6272a4; font-size:1.618em">■</div> | #6272a4 | <div style="color:#6171a3; font-size:1.618em">■</div> | #6171a3 | 4.5 | 0% |
-| COLOR6 | <div style="color:#8be9fd; font-size:1.618em">■</div> | #8be9fd | <div style="color:#007e90; font-size:1.618em">■</div> | #007e90 | 4.5 | 280% |
-| COLOR2 | <div style="color:#50fa7b; font-size:1.618em">■</div> | #50fa7b | <div style="color:#008504; font-size:1.618em">■</div> | #008504 | 4.5 | 290% |
-| ORANGE | <div style="color:#ffb86c; font-size:1.618em">■</div> | #ffb86c | <div style="color:#a0651b; font-size:1.618em">■</div> | #a0651b | 4.5 | 230% |
-| COLOR5 | <div style="color:#ff79c6; font-size:1.618em">■</div> | #ff79c6 | <div style="color:#c13f8e; font-size:1.618em">■</div> | #c13f8e | 4.5 | 160% |
-| COLOR4 | <div style="color:#bd93f9; font-size:1.618em">■</div> | #bd93f9 | <div style="color:#855fbf; font-size:1.618em">■</div> | #855fbf | 4.5 | 160% |
-| COLOR1 | <div style="color:#ff5555; font-size:1.618em">■</div> | #ff5555 | <div style="color:#d82f39; font-size:1.618em">■</div> | #d82f39 | 4.5 | 100% |
-| COLOR3 | <div style="color:#f1fa8c; font-size:1.618em">■</div> | #f1fa8c | <div style="color:#6c7908; font-size:1.618em">■</div> | #6c7908 | 4.5 | 330% |
-| COLOR0 | <div style="color:#21222c; font-size:1.618em">■</div> | #21222c | <div style="color:#21222c; font-size:1.618em">■</div> | #21222c | 14.8 | 0% |
-| COLOR1 | <div style="color:#ff5555; font-size:1.618em">■</div> | #ff5555 | <div style="color:#d82f39; font-size:1.618em">■</div> | #d82f39 | 4.5 | 100% |
-| COLOR2 | <div style="color:#50fa7b; font-size:1.618em">■</div> | #50fa7b | <div style="color:#008504; font-size:1.618em">■</div> | #008504 | 4.5 | 290% |
-| COLOR3 | <div style="color:#f1fa8c; font-size:1.618em">■</div> | #f1fa8c | <div style="color:#6c7908; font-size:1.618em">■</div> | #6c7908 | 4.5 | 330% |
-| COLOR4 | <div style="color:#bd93f9; font-size:1.618em">■</div> | #bd93f9 | <div style="color:#855fbf; font-size:1.618em">■</div> | #855fbf | 4.5 | 160% |
-| COLOR5 | <div style="color:#ff79c6; font-size:1.618em">■</div> | #ff79c6 | <div style="color:#c13f8e; font-size:1.618em">■</div> | #c13f8e | 4.5 | 160% |
-| COLOR6 | <div style="color:#8be9fd; font-size:1.618em">■</div> | #8be9fd | <div style="color:#007e90; font-size:1.618em">■</div> | #007e90 | 4.5 | 280% |
-| COLOR8 | <div style="color:#6272a4; font-size:1.618em">■</div> | #6272a4 | <div style="color:#6171a3; font-size:1.618em">■</div> | #6171a3 | 4.5 | 0% |
-| COLOR9 | <div style="color:#ff6e6e; font-size:1.618em">■</div> | #ff6e6e | <div style="color:#cb4046; font-size:1.618em">■</div> | #cb4046 | 4.5 | 130% |
-| COLOR10 | <div style="color:#69ff94; font-size:1.618em">■</div> | #69ff94 | <div style="color:#008525; font-size:1.618em">■</div> | #008525 | 4.5 | 300% |
-| COLOR11 | <div style="color:#ffffa5; font-size:1.618em">■</div> | #ffffa5 | <div style="color:#727724; font-size:1.618em">■</div> | #727724 | 4.5 | 340% |
-| COLOR12 | <div style="color:#d6acff; font-size:1.618em">■</div> | #d6acff | <div style="color:#8762ae; font-size:1.618em">■</div> | #8762ae | 4.5 | 210% |
-| COLOR13 | <div style="color:#ff92df; font-size:1.618em">■</div> | #ff92df | <div style="color:#b34b97; font-size:1.618em">■</div> | #b34b97 | 4.5 | 200% |
-| COLOR14 | <div style="color:#a4ffff; font-size:1.618em">■</div> | #a4ffff | <div style="color:#157f80; font-size:1.618em">■</div> | #157f80 | 4.5 | 320% |
-| WHITE | <div style="color:#ffffff; font-size:1.618em">■</div> | #ffffff | <div style="color:#727272; font-size:1.618em">■</div> | #727272 | 4.5 | 350% |
-| TEMP_QUOTES | <div style="color:#e9f284; font-size:1.618em">■</div> | #e9f284 | <div style="color:#6c7907; font-size:1.618em">■</div> | #6c7907 | 4.5 | 310% |
-| TEMP_PROPERTY_QUOTES | <div style="color:#8be9fe; font-size:1.618em">■</div> | #8be9fe | <div style="color:#007e91; font-size:1.618em">■</div> | #007e91 | 4.5 | 280% |
-| LineHighlight | <div style="color:#44475a75; font-size:1.618em">■</div> | #44475a75 | <div style="color:#44475a75; font-size:1.618em">■</div> | #44475a75 | 8.6 | 0% |
-| WHITE | <div style="color:#ffffff; font-size:1.618em">■</div> | #ffffff | <div style="color:#727272; font-size:1.618em">■</div> | #727272 | 4.5 | 350% |
-| TAB_DROP_BG | <div style="color:#44475a70; font-size:1.618em">■</div> | #44475a70 | <div style="color:#44475a70; font-size:1.618em">■</div> | #44475a70 | 8.6 | 0% |
+| COLOR8 | ![#6272a4](https://placehold.it/15/6272a4/000000?text=+) | #6272a4 | ![#6171a3](https://placehold.it/15/6171a3/000000?text=+) | #6171a3 | 4.5 | 0% |
+| COLOR6 | ![#8be9fd](https://placehold.it/15/8be9fd/000000?text=+) | #8be9fd | ![#007e90](https://placehold.it/15/007e90/000000?text=+) | #007e90 | 4.5 | 280% |
+| COLOR2 | ![#50fa7b](https://placehold.it/15/50fa7b/000000?text=+) | #50fa7b | ![#008504](https://placehold.it/15/008504/000000?text=+) | #008504 | 4.5 | 290% |
+| ORANGE | ![#ffb86c](https://placehold.it/15/ffb86c/000000?text=+) | #ffb86c | ![#a0651b](https://placehold.it/15/a0651b/000000?text=+) | #a0651b | 4.5 | 230% |
+| COLOR5 | ![#ff79c6](https://placehold.it/15/ff79c6/000000?text=+) | #ff79c6 | ![#c13f8e](https://placehold.it/15/c13f8e/000000?text=+) | #c13f8e | 4.5 | 160% |
+| COLOR4 | ![#bd93f9](https://placehold.it/15/bd93f9/000000?text=+) | #bd93f9 | ![#855fbf](https://placehold.it/15/855fbf/000000?text=+) | #855fbf | 4.5 | 160% |
+| COLOR1 | ![#ff5555](https://placehold.it/15/ff5555/000000?text=+) | #ff5555 | ![#d82f39](https://placehold.it/15/d82f39/000000?text=+) | #d82f39 | 4.5 | 100% |
+| COLOR3 | ![#f1fa8c](https://placehold.it/15/f1fa8c/000000?text=+) | #f1fa8c | ![#6c7908](https://placehold.it/15/6c7908/000000?text=+) | #6c7908 | 4.5 | 330% |
+| COLOR0 | ![#21222c](https://placehold.it/15/21222c/000000?text=+) | #21222c | ![#21222c](https://placehold.it/15/21222c/000000?text=+) | #21222c | 14.8 | 0% |
+| COLOR1 | ![#ff5555](https://placehold.it/15/ff5555/000000?text=+) | #ff5555 | ![#d82f39](https://placehold.it/15/d82f39/000000?text=+) | #d82f39 | 4.5 | 100% |
+| COLOR2 | ![#50fa7b](https://placehold.it/15/50fa7b/000000?text=+) | #50fa7b | ![#008504](https://placehold.it/15/008504/000000?text=+) | #008504 | 4.5 | 290% |
+| COLOR3 | ![#f1fa8c](https://placehold.it/15/f1fa8c/000000?text=+) | #f1fa8c | ![#6c7908](https://placehold.it/15/6c7908/000000?text=+) | #6c7908 | 4.5 | 330% |
+| COLOR4 | ![#bd93f9](https://placehold.it/15/bd93f9/000000?text=+) | #bd93f9 | ![#855fbf](https://placehold.it/15/855fbf/000000?text=+) | #855fbf | 4.5 | 160% |
+| COLOR5 | ![#ff79c6](https://placehold.it/15/ff79c6/000000?text=+) | #ff79c6 | ![#c13f8e](https://placehold.it/15/c13f8e/000000?text=+) | #c13f8e | 4.5 | 160% |
+| COLOR6 | ![#8be9fd](https://placehold.it/15/8be9fd/000000?text=+) | #8be9fd | ![#007e90](https://placehold.it/15/007e90/000000?text=+) | #007e90 | 4.5 | 280% |
+| COLOR8 | ![#6272a4](https://placehold.it/15/6272a4/000000?text=+) | #6272a4 | ![#6171a3](https://placehold.it/15/6171a3/000000?text=+) | #6171a3 | 4.5 | 0% |
+| COLOR9 | ![#ff6e6e](https://placehold.it/15/ff6e6e/000000?text=+) | #ff6e6e | ![#cb4046](https://placehold.it/15/cb4046/000000?text=+) | #cb4046 | 4.5 | 130% |
+| COLOR10 | ![#69ff94](https://placehold.it/15/69ff94/000000?text=+) | #69ff94 | ![#008525](https://placehold.it/15/008525/000000?text=+) | #008525 | 4.5 | 300% |
+| COLOR11 | ![#ffffa5](https://placehold.it/15/ffffa5/000000?text=+) | #ffffa5 | ![#727724](https://placehold.it/15/727724/000000?text=+) | #727724 | 4.5 | 340% |
+| COLOR12 | ![#d6acff](https://placehold.it/15/d6acff/000000?text=+) | #d6acff | ![#8762ae](https://placehold.it/15/8762ae/000000?text=+) | #8762ae | 4.5 | 210% |
+| COLOR13 | ![#ff92df](https://placehold.it/15/ff92df/000000?text=+) | #ff92df | ![#b34b97](https://placehold.it/15/b34b97/000000?text=+) | #b34b97 | 4.5 | 200% |
+| COLOR14 | ![#a4ffff](https://placehold.it/15/a4ffff/000000?text=+) | #a4ffff | ![#157f80](https://placehold.it/15/157f80/000000?text=+) | #157f80 | 4.5 | 320% |
+| WHITE | ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) | #ffffff | ![#727272](https://placehold.it/15/727272/000000?text=+) | #727272 | 4.5 | 350% |
+| TEMP_QUOTES | ![#e9f284](https://placehold.it/15/e9f284/000000?text=+) | #e9f284 | ![#6c7907](https://placehold.it/15/6c7907/000000?text=+) | #6c7907 | 4.5 | 310% |
+| TEMP_PROPERTY_QUOTES | ![#8be9fe](https://placehold.it/15/8be9fe/000000?text=+) | #8be9fe | ![#007e91](https://placehold.it/15/007e91/000000?text=+) | #007e91 | 4.5 | 280% |
+| LineHighlight | ![#44475a75](https://placehold.it/15/44475a75/000000?text=+) | #44475a75 | ![#44475a75](https://placehold.it/15/44475a75/000000?text=+) | #44475a75 | 8.6 | 0% |
+| WHITE | ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) | #ffffff | ![#727272](https://placehold.it/15/727272/000000?text=+) | #727272 | 4.5 | 350% |
+| TAB_DROP_BG | ![#44475a70](https://placehold.it/15/44475a70/000000?text=+) | #44475a70 | ![#44475a70](https://placehold.it/15/44475a70/000000?text=+) | #44475a70 | 8.6 | 0% |
 
 ### White Darker
 
 | Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (#ffffff) | Difference   |
 |------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|--------------|
-| COLOR8 | <div style="color:#6272a4; font-size:1.618em">■</div> | #6272a4 | <div style="color:#425483; font-size:1.618em">■</div> | #425483 | 7 | 120% |
-| COLOR6 | <div style="color:#8be9fd; font-size:1.618em">■</div> | #8be9fd | <div style="color:#005d6f; font-size:1.618em">■</div> | #005d6f | 7 | 370% |
-| COLOR2 | <div style="color:#50fa7b; font-size:1.618em">■</div> | #50fa7b | <div style="color:#006400; font-size:1.618em">■</div> | #006400 | 7 | 380% |
-| ORANGE | <div style="color:#ffb86c; font-size:1.618em">■</div> | #ffb86c | <div style="color:#7d4800; font-size:1.618em">■</div> | #7d4800 | 7 | 320% |
-| COLOR5 | <div style="color:#ff79c6; font-size:1.618em">■</div> | #ff79c6 | <div style="color:#9f1670; font-size:1.618em">■</div> | #9f1670 | 7 | 260% |
-| COLOR4 | <div style="color:#bd93f9; font-size:1.618em">■</div> | #bd93f9 | <div style="color:#64429e; font-size:1.618em">■</div> | #64429e | 7 | 250% |
-| COLOR1 | <div style="color:#ff5555; font-size:1.618em">■</div> | #ff5555 | <div style="color:#ae001c; font-size:1.618em">■</div> | #ae001c | 7 | 200% |
-| COLOR3 | <div style="color:#f1fa8c; font-size:1.618em">■</div> | #f1fa8c | <div style="color:#4c5b00; font-size:1.618em">■</div> | #4c5b00 | 7 | 410% |
-| COLOR0 | <div style="color:#21222c; font-size:1.618em">■</div> | #21222c | <div style="color:#21222c; font-size:1.618em">■</div> | #21222c | 14.8 | 0% |
-| COLOR1 | <div style="color:#ff5555; font-size:1.618em">■</div> | #ff5555 | <div style="color:#ae001c; font-size:1.618em">■</div> | #ae001c | 7 | 200% |
-| COLOR2 | <div style="color:#50fa7b; font-size:1.618em">■</div> | #50fa7b | <div style="color:#006400; font-size:1.618em">■</div> | #006400 | 7 | 380% |
-| COLOR3 | <div style="color:#f1fa8c; font-size:1.618em">■</div> | #f1fa8c | <div style="color:#4c5b00; font-size:1.618em">■</div> | #4c5b00 | 7 | 410% |
-| COLOR4 | <div style="color:#bd93f9; font-size:1.618em">■</div> | #bd93f9 | <div style="color:#64429e; font-size:1.618em">■</div> | #64429e | 7 | 250% |
-| COLOR5 | <div style="color:#ff79c6; font-size:1.618em">■</div> | #ff79c6 | <div style="color:#9f1670; font-size:1.618em">■</div> | #9f1670 | 7 | 260% |
-| COLOR6 | <div style="color:#8be9fd; font-size:1.618em">■</div> | #8be9fd | <div style="color:#005d6f; font-size:1.618em">■</div> | #005d6f | 7 | 370% |
-| COLOR8 | <div style="color:#6272a4; font-size:1.618em">■</div> | #6272a4 | <div style="color:#425483; font-size:1.618em">■</div> | #425483 | 7 | 120% |
-| COLOR9 | <div style="color:#ff6e6e; font-size:1.618em">■</div> | #ff6e6e | <div style="color:#a7192c; font-size:1.618em">■</div> | #a7192c | 7 | 230% |
-| COLOR10 | <div style="color:#69ff94; font-size:1.618em">■</div> | #69ff94 | <div style="color:#006400; font-size:1.618em">■</div> | #006400 | 7 | 390% |
-| COLOR11 | <div style="color:#ffffa5; font-size:1.618em">■</div> | #ffffa5 | <div style="color:#535901; font-size:1.618em">■</div> | #535901 | 7 | 420% |
-| COLOR12 | <div style="color:#d6acff; font-size:1.618em">■</div> | #d6acff | <div style="color:#68448e; font-size:1.618em">■</div> | #68448e | 7 | 300% |
-| COLOR13 | <div style="color:#ff92df; font-size:1.618em">■</div> | #ff92df | <div style="color:#912a78; font-size:1.618em">■</div> | #912a78 | 7 | 290% |
-| COLOR14 | <div style="color:#a4ffff; font-size:1.618em">■</div> | #a4ffff | <div style="color:#005f60; font-size:1.618em">■</div> | #005f60 | 7 | 400% |
-| WHITE | <div style="color:#ffffff; font-size:1.618em">■</div> | #ffffff | <div style="color:#555555; font-size:1.618em">■</div> | #555555 | 7 | 430% |
-| TEMP_QUOTES | <div style="color:#e9f284; font-size:1.618em">■</div> | #e9f284 | <div style="color:#4c5b00; font-size:1.618em">■</div> | #4c5b00 | 7 | 400% |
-| TEMP_PROPERTY_QUOTES | <div style="color:#8be9fe; font-size:1.618em">■</div> | #8be9fe | <div style="color:#005d70; font-size:1.618em">■</div> | #005d70 | 7 | 370% |
-| LineHighlight | <div style="color:#44475a75; font-size:1.618em">■</div> | #44475a75 | <div style="color:#44475a75; font-size:1.618em">■</div> | #44475a75 | 8.6 | 0% |
-| WHITE | <div style="color:#ffffff; font-size:1.618em">■</div> | #ffffff | <div style="color:#555555; font-size:1.618em">■</div> | #555555 | 7 | 430% |
-| TAB_DROP_BG | <div style="color:#44475a70; font-size:1.618em">■</div> | #44475a70 | <div style="color:#44475a70; font-size:1.618em">■</div> | #44475a70 | 8.6 | 0% |
+| COLOR8 | ![#6272a4](https://placehold.it/15/6272a4/000000?text=+) | #6272a4 | ![#425483](https://placehold.it/15/425483/000000?text=+) | #425483 | 7 | 120% |
+| COLOR6 | ![#8be9fd](https://placehold.it/15/8be9fd/000000?text=+) | #8be9fd | ![#005d6f](https://placehold.it/15/005d6f/000000?text=+) | #005d6f | 7 | 370% |
+| COLOR2 | ![#50fa7b](https://placehold.it/15/50fa7b/000000?text=+) | #50fa7b | ![#006400](https://placehold.it/15/006400/000000?text=+) | #006400 | 7 | 380% |
+| ORANGE | ![#ffb86c](https://placehold.it/15/ffb86c/000000?text=+) | #ffb86c | ![#7d4800](https://placehold.it/15/7d4800/000000?text=+) | #7d4800 | 7 | 320% |
+| COLOR5 | ![#ff79c6](https://placehold.it/15/ff79c6/000000?text=+) | #ff79c6 | ![#9f1670](https://placehold.it/15/9f1670/000000?text=+) | #9f1670 | 7 | 260% |
+| COLOR4 | ![#bd93f9](https://placehold.it/15/bd93f9/000000?text=+) | #bd93f9 | ![#64429e](https://placehold.it/15/64429e/000000?text=+) | #64429e | 7 | 250% |
+| COLOR1 | ![#ff5555](https://placehold.it/15/ff5555/000000?text=+) | #ff5555 | ![#ae001c](https://placehold.it/15/ae001c/000000?text=+) | #ae001c | 7 | 200% |
+| COLOR3 | ![#f1fa8c](https://placehold.it/15/f1fa8c/000000?text=+) | #f1fa8c | ![#4c5b00](https://placehold.it/15/4c5b00/000000?text=+) | #4c5b00 | 7 | 410% |
+| COLOR0 | ![#21222c](https://placehold.it/15/21222c/000000?text=+) | #21222c | ![#21222c](https://placehold.it/15/21222c/000000?text=+) | #21222c | 14.8 | 0% |
+| COLOR1 | ![#ff5555](https://placehold.it/15/ff5555/000000?text=+) | #ff5555 | ![#ae001c](https://placehold.it/15/ae001c/000000?text=+) | #ae001c | 7 | 200% |
+| COLOR2 | ![#50fa7b](https://placehold.it/15/50fa7b/000000?text=+) | #50fa7b | ![#006400](https://placehold.it/15/006400/000000?text=+) | #006400 | 7 | 380% |
+| COLOR3 | ![#f1fa8c](https://placehold.it/15/f1fa8c/000000?text=+) | #f1fa8c | ![#4c5b00](https://placehold.it/15/4c5b00/000000?text=+) | #4c5b00 | 7 | 410% |
+| COLOR4 | ![#bd93f9](https://placehold.it/15/bd93f9/000000?text=+) | #bd93f9 | ![#64429e](https://placehold.it/15/64429e/000000?text=+) | #64429e | 7 | 250% |
+| COLOR5 | ![#ff79c6](https://placehold.it/15/ff79c6/000000?text=+) | #ff79c6 | ![#9f1670](https://placehold.it/15/9f1670/000000?text=+) | #9f1670 | 7 | 260% |
+| COLOR6 | ![#8be9fd](https://placehold.it/15/8be9fd/000000?text=+) | #8be9fd | ![#005d6f](https://placehold.it/15/005d6f/000000?text=+) | #005d6f | 7 | 370% |
+| COLOR8 | ![#6272a4](https://placehold.it/15/6272a4/000000?text=+) | #6272a4 | ![#425483](https://placehold.it/15/425483/000000?text=+) | #425483 | 7 | 120% |
+| COLOR9 | ![#ff6e6e](https://placehold.it/15/ff6e6e/000000?text=+) | #ff6e6e | ![#a7192c](https://placehold.it/15/a7192c/000000?text=+) | #a7192c | 7 | 230% |
+| COLOR10 | ![#69ff94](https://placehold.it/15/69ff94/000000?text=+) | #69ff94 | ![#006400](https://placehold.it/15/006400/000000?text=+) | #006400 | 7 | 390% |
+| COLOR11 | ![#ffffa5](https://placehold.it/15/ffffa5/000000?text=+) | #ffffa5 | ![#535901](https://placehold.it/15/535901/000000?text=+) | #535901 | 7 | 420% |
+| COLOR12 | ![#d6acff](https://placehold.it/15/d6acff/000000?text=+) | #d6acff | ![#68448e](https://placehold.it/15/68448e/000000?text=+) | #68448e | 7 | 300% |
+| COLOR13 | ![#ff92df](https://placehold.it/15/ff92df/000000?text=+) | #ff92df | ![#912a78](https://placehold.it/15/912a78/000000?text=+) | #912a78 | 7 | 290% |
+| COLOR14 | ![#a4ffff](https://placehold.it/15/a4ffff/000000?text=+) | #a4ffff | ![#005f60](https://placehold.it/15/005f60/000000?text=+) | #005f60 | 7 | 400% |
+| WHITE | ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) | #ffffff | ![#555555](https://placehold.it/15/555555/000000?text=+) | #555555 | 7 | 430% |
+| TEMP_QUOTES | ![#e9f284](https://placehold.it/15/e9f284/000000?text=+) | #e9f284 | ![#4c5b00](https://placehold.it/15/4c5b00/000000?text=+) | #4c5b00 | 7 | 400% |
+| TEMP_PROPERTY_QUOTES | ![#8be9fe](https://placehold.it/15/8be9fe/000000?text=+) | #8be9fe | ![#005d70](https://placehold.it/15/005d70/000000?text=+) | #005d70 | 7 | 370% |
+| LineHighlight | ![#44475a75](https://placehold.it/15/44475a75/000000?text=+) | #44475a75 | ![#44475a75](https://placehold.it/15/44475a75/000000?text=+) | #44475a75 | 8.6 | 0% |
+| WHITE | ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) | #ffffff | ![#555555](https://placehold.it/15/555555/000000?text=+) | #555555 | 7 | 430% |
+| TAB_DROP_BG | ![#44475a70](https://placehold.it/15/44475a70/000000?text=+) | #44475a70 | ![#44475a70](https://placehold.it/15/44475a70/000000?text=+) | #44475a70 | 8.6 | 0% |
 
 ## Light Theme Methodology
 
