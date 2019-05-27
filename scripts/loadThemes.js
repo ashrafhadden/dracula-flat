@@ -1,4 +1,4 @@
-const { inspect } = require('util')
+'use strict'
 const { loadJSON } = require('./yaml')
 const chroma = require('chroma-js')
 const fs = require('fs')
@@ -45,6 +45,7 @@ function getVariant(yaml, json, variant) {
   // https://vis4.net/chromajs/#chroma-contrast
   // Minimum (Level AA) 4.5
   // Enhanced (Level AAA) 7
+  const resolution = 0.001
   // ratioTargetMap determines the minimum
   const ratioTargetMap = {
     'light': 4.5,
@@ -53,7 +54,22 @@ function getVariant(yaml, json, variant) {
     'white-darker': 7,
   }
 
-  let contrastReport = []
+  // prettier-ignore
+  const colorTypeMap = { '#282A36': 'BG', '#F8F8F2': 'FG', '#44475A': 'SELECTION', '#6272A4': 'COMMENT', '#8BE9FD': 'CYAN', '#50FA7B': 'GREEN', '#FFB86C': 'ORANGE', '#FF79C6': 'PINK', '#BD93F9': 'PURPLE', '#FF5555': 'RED', '#F1FA8C': 'YELLOW', '#21222C': 'COLOR0', '#FF5555': 'COLOR1', '#50FA7B': 'COLOR2', '#F1FA8C': 'COLOR3', '#BD93F9': 'COLOR4', '#FF79C6': 'COLOR5', '#8BE9FD': 'COLOR6', '#F8F8F2': 'COLOR7', '#6272A4': 'COLOR8', '#FF6E6E': 'COLOR9', '#69FF94': 'COLOR10', '#FFFFA5': 'COLOR11', '#D6ACFF': 'COLOR12', '#FF92DF': 'COLOR13', '#A4FFFF': 'COLOR14', '#FFFFFF': 'COLOR15', '#E9F284': 'TEMP_QUOTES', '#8BE9FE': 'TEMP_PROPERTY_QUOTES', '#44475A75': 'LineHighlight', '#424450': 'NonText', '#FFFFFF': 'WHITE', '#44475A70': 'TAB_DROP_BG', '#424450': 'BGLighter', '#343746': 'BGLight', '#282A36': 'BGDark', '#282A36': 'BGDarker', }
+  // generate Markdown Table for use in "## Colors Used" section of README.md
+  // prettier-ignore
+  const variantDisplayName = variant
+  .toLowerCase()
+  .split('-')
+  .map(s => s.charAt(0).toUpperCase() + s.substring(1))
+    .join(' ')
+  const background = `${variant.includes('light') ? '#282a36': '#ffffff' }`
+  let MDTable = `\
+### ${variantDisplayName}
+
+| Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (${background}) | Difference   |
+|------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|--------------|`
+
   const regex = /#[0-9A-F]{3,}/gi // https://regexr.com/4cue7
   let yamlVariant = yaml.replace(regex, color => {
     const originalColor = color
@@ -73,26 +89,11 @@ function getVariant(yaml, json, variant) {
       const draculaOfficialRatio = chroma.contrast(SELECTION, BG)
       color = SELECTION
       while (chroma.contrast(color, FG) > draculaOfficialRatio) {
-        color = chroma(color).brighten(0.01) // lower = more accurate
+        color = chroma(color).brighten(resolution) // lower = more accurate
       }
       return color
     }
 
-    function smartDarken() {
-      let timesDarkened = 0
-      while (chroma.contrast(color, FG) < ratioTargetMap[variant]) {
-        color = chroma(color).darken(0.01) // lower = more accurate
-        timesDarkened++
-      }
-      // prettier-ignore
-      contrastReport.push({
-        Original     : originalColor,
-        Darkened     : chroma(color).hex(),
-        Ratio         : chroma.contrast(color, FG),
-        timesDarkened: timesDarkened,
-      })
-      return color
-    }
     // prettier-ignore
     switch (variant) {
       case 'light'       : return smartDarken()
@@ -100,20 +101,28 @@ function getVariant(yaml, json, variant) {
       case 'white'       : return smartDarken()
       case 'white-darker': return smartDarken()
     }
+
+    function smartDarken() {
+      while (chroma.contrast(color, FG) < ratioTargetMap[variant]) {
+        color = chroma(color).darken(resolution) // lower = more accurate
+      }
+
+      const darkenedColor = chroma(color).hex()
+      const name = colorTypeMap[originalColor]
+      const ratioToBackground = Math.round(chroma.contrast(darkenedColor, FG) * 10) / 10
+      // const ratioToBackground = chroma.contrast(darkenedColor, FG).toFixed(1)
+      // const ratioToBackground = chroma.contrast(darkenedColor, FG)
+      const difference = `${Math.round(chroma.deltaE(originalColor, darkenedColor)) * 10}%`
+      MDTable += `\n| ${name} | <div style="color:${originalColor.toLowerCase()}; font-size:1.618em">■</div> | ${originalColor.toLowerCase()} | <div style="color:${darkenedColor}; font-size:1.618em">■</div> | ${darkenedColor} | ${ratioToBackground} | ${difference} |`
+
+      return color
+    }
   })
 
-  const variantDisplayName = variant
-    .toLowerCase()
-    .split('-')
-    .map(s => s.charAt(0).toUpperCase() + s.substring(1))
-    .join(' ')
-
-  /// Generate contrastReports
-  contrastReport.unshift({
-    variant: variantDisplayName,
-    contrastRatioTarget: ratioTargetMap[variant],
+  MDTable += '\n\n'
+  fs.appendFile(`colors-used-table.md`, MDTable, err => {
+    if (err) throw err
   })
-  fs.writeFile(`contrastReport-${variant}.js`, inspect(contrastReport), err => {if (err) throw err})
 
   return yamlVariant.replace('Dracula.min Theme', `Dracula.min ${variantDisplayName} Theme`)
 }
