@@ -54,14 +54,10 @@ function getVariant(yaml, json, variant) {
     'white-darker': 7,
   }
 
-  // prettier-ignore
-  const colorTypeMap = { '#282A36': 'BG', '#F8F8F2': 'FG', '#44475A': 'SELECTION', '#6272A4': 'COMMENT', '#8BE9FD': 'CYAN', '#50FA7B': 'GREEN', '#FFB86C': 'ORANGE', '#FF79C6': 'PINK', '#BD93F9': 'PURPLE', '#FF5555': 'RED', '#F1FA8C': 'YELLOW', '#21222C': 'COLOR0', '#FF5555': 'COLOR1', '#50FA7B': 'COLOR2', '#F1FA8C': 'COLOR3', '#BD93F9': 'COLOR4', '#FF79C6': 'COLOR5', '#8BE9FD': 'COLOR6', '#F8F8F2': 'COLOR7', '#6272A4': 'COLOR8', '#FF6E6E': 'COLOR9', '#69FF94': 'COLOR10', '#FFFFA5': 'COLOR11', '#D6ACFF': 'COLOR12', '#FF92DF': 'COLOR13', '#A4FFFF': 'COLOR14', '#FFFFFF': 'COLOR15', '#E9F284': 'TEMP_QUOTES', '#8BE9FE': 'TEMP_PROPERTY_QUOTES', '#44475A75': 'LineHighlight', '#424450': 'NonText', '#FFFFFF': 'WHITE', '#44475A70': 'TAB_DROP_BG', '#424450': 'BGLighter', '#343746': 'BGLight', '#282A36': 'BGDark', '#282A36': 'BGDarker', }
-  // generate Markdown Table for use in "## Colors Used" section of README.md
-  // prettier-ignore
   const variantDisplayName = variant
-  .toLowerCase()
-  .split('-')
-  .map(s => s.charAt(0).toUpperCase() + s.substring(1))
+    .toLowerCase()
+    .split('-')
+    .map(s => s.charAt(0).toUpperCase() + s.substring(1))
     .join(' ')
   const background = `${variant.includes('light') ? '#282a36' : '#ffffff'}`
   let MDTable = `\
@@ -107,16 +103,16 @@ function getVariant(yaml, json, variant) {
         color = chroma(color).darken(resolution) // lower = more accurate
       }
 
+      /// generate Markdown Table for use in "## Colors Used" section of README.md
+      // prettier-ignore
+      const colorTypeMap = { '#282A36': 'BG', '#F8F8F2': 'FG', '#44475A': 'SELECTION', '#6272A4': 'COMMENT', '#8BE9FD': 'CYAN', '#50FA7B': 'GREEN', '#FFB86C': 'ORANGE', '#FF79C6': 'PINK', '#BD93F9': 'PURPLE', '#FF5555': 'RED', '#F1FA8C': 'YELLOW', '#21222C': 'COLOR0', '#FF5555': 'COLOR1', '#50FA7B': 'COLOR2', '#F1FA8C': 'COLOR3', '#BD93F9': 'COLOR4', '#FF79C6': 'COLOR5', '#8BE9FD': 'COLOR6', '#F8F8F2': 'COLOR7', '#6272A4': 'COLOR8', '#FF6E6E': 'COLOR9', '#69FF94': 'COLOR10', '#FFFFA5': 'COLOR11', '#D6ACFF': 'COLOR12', '#FF92DF': 'COLOR13', '#A4FFFF': 'COLOR14', '#FFFFFF': 'COLOR15', '#E9F284': 'TEMP_QUOTES', '#8BE9FE': 'TEMP_PROPERTY_QUOTES', '#44475A75': 'LineHighlight', '#424450': 'NonText', '#FFFFFF': 'WHITE', '#44475A70': 'TAB_DROP_BG', '#424450': 'BGLighter', '#343746': 'BGLight', '#282A36': 'BGDark', '#282A36': 'BGDarker', }
+      const name = colorTypeMap[originalColor]
       const darkenedColor = chroma(color).hex()
       const darkenedColor_noHex = darkenedColor.substring(1)
-      const name = colorTypeMap[originalColor]
-      const ratioToBackground = Math.round(chroma.contrast(darkenedColor, FG) * 10) / 10
-      // const ratioToBackground = chroma.contrast(darkenedColor, FG).toFixed(1)
-      // const ratioToBackground = chroma.contrast(darkenedColor, FG)
-      const difference = `${Math.round(chroma.deltaE(originalColor, darkenedColor)) * 10}%`
       const originalColorLC = originalColor.toLowerCase()
       const originalColorLC_noHex = originalColorLC.substring(1)
-      MDTable += `\n| ${name} | ![${originalColorLC}](https://placehold.it/15/${originalColorLC_noHex}/000000?text=+) | ${originalColorLC} | ![${darkenedColor}](https://placehold.it/15/${darkenedColor_noHex}/000000?text=+) | ${darkenedColor} | ${ratioToBackground} | ${difference} |`
+      const ratioToBackground = Math.round(chroma.contrast(darkenedColor, FG) * 10) / 10
+      MDTable += `\n| ${name} | ![${originalColorLC}](https://placehold.it/16/${originalColorLC_noHex}/000000?text=+) | ${originalColorLC} | ![${darkenedColor}](https://placehold.it/15/${darkenedColor_noHex}/000000?text=+) | ${darkenedColor} | ${ratioToBackground} |`
 
       return color
     }
