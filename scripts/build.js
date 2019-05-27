@@ -15,6 +15,9 @@ async function build() {
   if (!(await fs.existsSync(THEME_DIR))) {
     await fs.mkdir(THEME_DIR, err => {if (err) throw err})
   }
+  fs.unlinkSync('colors-used-table.md', err => {
+    if (err) throw err
+  })
 
   const extensionName = process.env.npm_package_name
   const { json, json_light, json_lightDarker, json_white, json_whiteDarker } = await loadThemes(THEME_YAML_FILE)

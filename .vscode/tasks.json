@@ -10,7 +10,6 @@
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": [],
       "presentation": {
         "echo": false,
         "reveal": "always",

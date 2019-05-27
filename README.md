@@ -91,6 +91,42 @@ For those who prefer [tweaking themes via `settings.json`](https://code.visualst
   }
 ```
 
+## Colors Used
+
+### Dracula.min White
+
+> **Contrast Ratio Target**: 4.5 
+
+| Original (Dracula)                   | Hex       | Darkened                             | Hex       | Type                 | Ratio to Background | Difference         |
+| ------------------------------------ | --------- | ------------------------------------ | --------- | -------------------- | ------------------- | ------------------ |
+| <div style="color:#6272A4">■</div>   | #6272A4   | <div style="color:#425383">■</div>   | #425383   | COLOR8               | 7.044185460116278   | 71.49592219066405  |
+| <div style="color:#8BE9FD">■</div>   | #8BE9FD   | <div style="color:#005d6f">■</div>   | #005d6f   | COLOR6               | 7.047743007316712   | 70.08887344718158  |
+| <div style="color:#50FA7B">■</div>   | #50FA7B   | <div style="color:#006300">■</div>   | #006300   | COLOR2               | 7.074427451977054   | 71.52509777593237  |
+| <div style="color:#FFB86C">■</div>   | #FFB86C   | <div style="color:#7d4800">■</div>   | #7d4800   | ORANGE               | 7.038524703864466   | 70.91112886919653  |
+| <div style="color:#FF79C6">■</div>   | #FF79C6   | <div style="color:#9e156f">■</div>   | #9e156f   | COLOR5               | 7.0594967692047055  | 72.3848739326088   |
+| <div style="color:#BD93F9">■</div>   | #BD93F9   | <div style="color:#64419e">■</div>   | #64419e   | COLOR4               | 7.056759646366045   | 72.71553583788163  |
+| <div style="color:#FF5555">■</div>   | #FF5555   | <div style="color:#ad001c">■</div>   | #ad001c   | COLOR1               | 7.051941844362199   | 72.96503135353609  |
+| <div style="color:#F1FA8C">■</div>   | #F1FA8C   | <div style="color:#4c5b00">■</div>   | #4c5b00   | COLOR3               | 7.026491341232648   | 70.27038560926759  |
+| <div style="color:#21222C">■</div>   | #21222C   | <div style="color:#21222c">■</div>   | #21222c   | COLOR0               | 14.81404048857085   | 164.75521005041696 |
+| <div style="color:#FF5555">■</div>   | #FF5555   | <div style="color:#ad001c">■</div>   | #ad001c   | COLOR1               | 7.051941844362199   | 72.96503135353609  |
+| <div style="color:#50FA7B">■</div>   | #50FA7B   | <div style="color:#006300">■</div>   | #006300   | COLOR2               | 7.074427451977054   | 71.52509777593237  |
+| <div style="color:#F1FA8C">■</div>   | #F1FA8C   | <div style="color:#4c5b00">■</div>   | #4c5b00   | COLOR3               | 7.026491341232648   | 70.27038560926759  |
+| <div style="color:#BD93F9">■</div>   | #BD93F9   | <div style="color:#64419e">■</div>   | #64419e   | COLOR4               | 7.056759646366045   | 72.71553583788163  |
+| <div style="color:#FF79C6">■</div>   | #FF79C6   | <div style="color:#9e156f">■</div>   | #9e156f   | COLOR5               | 7.0594967692047055  | 72.3848739326088   |
+| <div style="color:#8BE9FD">■</div>   | #8BE9FD   | <div style="color:#005d6f">■</div>   | #005d6f   | COLOR6               | 7.047743007316712   | 70.08887344718158  |
+| <div style="color:#6272A4">■</div>   | #6272A4   | <div style="color:#425383">■</div>   | #425383   | COLOR8               | 7.044185460116278   | 71.49592219066405  |
+| <div style="color:#FF6E6E">■</div>   | #FF6E6E   | <div style="color:#a6192b">■</div>   | #a6192b   | COLOR9               | 7.04760595804694    | 72.32248064643363  |
+| <div style="color:#69FF94">■</div>   | #69FF94   | <div style="color:#006300">■</div>   | #006300   | COLOR10              | 7.074427451977054   | 71.52509777593237  |
+| <div style="color:#FFFFA5">■</div>   | #FFFFA5   | <div style="color:#535900">■</div>   | #535900   | COLOR11              | 7.044034570492541   | 70.344536689284    |
+| <div style="color:#D6ACFF">■</div>   | #D6ACFF   | <div style="color:#67448e">■</div>   | #67448e   | COLOR12              | 7.050565865765938   | 71.96447727876726  |
+| <div style="color:#FF92DF">■</div>   | #FF92DF   | <div style="color:#912a78">■</div>   | #912a78   | COLOR13              | 7.019948219683619   | 71.78905449335006  |
+| <div style="color:#A4FFFF">■</div>   | #A4FFFF   | <div style="color:#005f60">■</div>   | #005f60   | COLOR14              | 7.0213447035024155  | 69.55854940627803  |
+| <div style="color:#FFFFFF">■</div>   | #FFFFFF   | <div style="color:#555555">■</div>   | #555555   | WHITE                | 6.993813549251667   | 67.9468248434646   |
+| <div style="color:#E9F284">■</div>   | #E9F284   | <div style="color:#4c5b00">■</div>   | #4c5b00   | TEMP_QUOTES          | 7.026491341232648   | 70.27038560926759  |
+| <div style="color:#8BE9FE">■</div>   | #8BE9FE   | <div style="color:#005d70">■</div>   | #005d70   | TEMP_PROPERTY_QUOTES | 7.036588870643271   | 70.024873959901    |
+| <div style="color:#44475A75">■</div> | #44475A75 | <div style="color:#44475a75">■</div> | #44475a75 | LineHighlight        | 8.585101622152614   | 83.93358823746557  |
+| <div style="color:#FFFFFF">■</div>   | #FFFFFF   | <div style="color:#555555">■</div>   | #555555   | WHITE                | 6.993813549251667   | 67.9468248434646   |
+| <div style="color:#44475A70">■</div> | #44475A70 | <div style="color:#44475a70">■</div> | #44475a70 | TAB_DROP_BG          | 8.585101622152614   | 83.93358823746557  | 8823746557 |
 
 ## Light Theme Methodology
 
