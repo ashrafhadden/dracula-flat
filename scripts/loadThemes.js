@@ -63,8 +63,8 @@ function getVariant(yaml, json, variant) {
   let MDTable = `\
 ### ${variantDisplayName}
 
-| Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (${background}) | Difference   |
-|------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|--------------|`
+| Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (${background}) |
+|------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|`
 
   const regex = /#[0-9A-F]{3,}/gi // https://regexr.com/4cue7
   let yamlVariant = yaml.replace(regex, color => {

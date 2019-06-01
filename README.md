@@ -90,8 +90,8 @@ For those who prefer [tweaking themes via `settings.json`](https://code.visualst
 
 ### Light
 
-| Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (#282a36) | Difference   |
-|------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|--------------|
+| Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (#282a36) |
+|------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|
 | COLOR8 | ![#6272a4](https://placehold.it/16/6272a4/000000?text=+) | #6272a4 | ![#6171a3](https://placehold.it/15/6171a3/000000?text=+) | #6171a3 | 4.5 |
 | COLOR6 | ![#8be9fd](https://placehold.it/16/8be9fd/000000?text=+) | #8be9fd | ![#007e90](https://placehold.it/15/007e90/000000?text=+) | #007e90 | 4.5 |
 | COLOR2 | ![#50fa7b](https://placehold.it/16/50fa7b/000000?text=+) | #50fa7b | ![#008504](https://placehold.it/15/008504/000000?text=+) | #008504 | 4.5 |
@@ -123,8 +123,8 @@ For those who prefer [tweaking themes via `settings.json`](https://code.visualst
 
 ### Light Darker
 
-| Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (#282a36) | Difference   |
-|------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|--------------|
+| Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (#282a36) |
+|------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|
 | COLOR8 | ![#6272a4](https://placehold.it/16/6272a4/000000?text=+) | #6272a4 | ![#425483](https://placehold.it/15/425483/000000?text=+) | #425483 | 7 |
 | COLOR6 | ![#8be9fd](https://placehold.it/16/8be9fd/000000?text=+) | #8be9fd | ![#005d6f](https://placehold.it/15/005d6f/000000?text=+) | #005d6f | 7 |
 | COLOR2 | ![#50fa7b](https://placehold.it/16/50fa7b/000000?text=+) | #50fa7b | ![#006400](https://placehold.it/15/006400/000000?text=+) | #006400 | 7 |
@@ -156,8 +156,8 @@ For those who prefer [tweaking themes via `settings.json`](https://code.visualst
 
 ### White
 
-| Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (#ffffff) | Difference   |
-|------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|--------------|
+| Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (#ffffff) |
+|------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|
 | COLOR8 | ![#6272a4](https://placehold.it/16/6272a4/000000?text=+) | #6272a4 | ![#6171a3](https://placehold.it/15/6171a3/000000?text=+) | #6171a3 | 4.5 |
 | COLOR6 | ![#8be9fd](https://placehold.it/16/8be9fd/000000?text=+) | #8be9fd | ![#007e90](https://placehold.it/15/007e90/000000?text=+) | #007e90 | 4.5 |
 | COLOR2 | ![#50fa7b](https://placehold.it/16/50fa7b/000000?text=+) | #50fa7b | ![#008504](https://placehold.it/15/008504/000000?text=+) | #008504 | 4.5 |
@@ -189,8 +189,8 @@ For those who prefer [tweaking themes via `settings.json`](https://code.visualst
 
 ### White Darker
 
-| Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (#ffffff) | Difference   |
-|------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|--------------|
+| Name | [Original (Dracula)](https://github.com/dracula/visual-studio-code/blob/master/src/dracula.yml#L6) | Hex | Darkened | Hex | Ratio to Background (#ffffff) |
+|------|----------------------------------------------------------------------------------------------------|-----|----------|-----|-------------------------------------|
 | COLOR8 | ![#6272a4](https://placehold.it/16/6272a4/000000?text=+) | #6272a4 | ![#425483](https://placehold.it/15/425483/000000?text=+) | #425483 | 7 |
 | COLOR6 | ![#8be9fd](https://placehold.it/16/8be9fd/000000?text=+) | #8be9fd | ![#005d6f](https://placehold.it/15/005d6f/000000?text=+) | #005d6f | 7 |
 | COLOR2 | ![#50fa7b](https://placehold.it/16/50fa7b/000000?text=+) | #50fa7b | ![#006400](https://placehold.it/15/006400/000000?text=+) | #006400 | 7 |
