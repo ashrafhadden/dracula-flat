@@ -4,4 +4,3 @@ src/tests
 bin
 *.vsix
 _ttd_log_
-colors-used-table.md
