@@ -3,15 +3,16 @@
   "version": "2.0.7",
   "description": "Dracula minified 📦 Less GUI, more code — Minimal 🌙 Dark & 🔆 Light themes",
   "keywords": [
+    "dracula flat",
     "dracula.min",
     "dracula",
     "minimal",
     "borderless",
-    "seamless",
-    "no-borders",
     "no borders",
+    "no-borders",
+    "flat",
     "solid",
-    "flat"
+    "seamless"
   ],
   "homepage": "https://github.com/ashrafhadden/dracula.min",
   "bugs": {
